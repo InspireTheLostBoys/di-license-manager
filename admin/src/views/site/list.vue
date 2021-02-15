@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <v-container>
+  <h2>Sites:</h2>
     <v-btn @click="crudManager.onAdd()">Add</v-btn>
     <v-data-table :headers="headers" :items="crudManager.list">
       <template v-slot:item.actions="{ item }">
@@ -7,7 +8,7 @@
         <v-btn @click="deleteItem(item)">delete</v-btn>
       </template>
     </v-data-table>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -20,7 +21,7 @@ export default {
       headers: [
         {
           text: "Name",
-          value: "name",
+          value: "siteName",
         },
         {
           text: "CustomerID",

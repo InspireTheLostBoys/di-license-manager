@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Index from '../views/Index.vue'
+import AddItem from '../views/modals/addItem.vue'
 
 import CarList from '../views/car/list.vue'
 import CarAdd from '../views/car/add.vue'
@@ -27,6 +28,22 @@ import LicenseList from '../views/license/list'
 import LicenseAdd from '../views/license/add.vue'
 import LicenseEdit from '../views/license/edit.vue'
 
+
+import ProductList from '../views/product/list'
+import ProductAdd from '../views/product/add.vue'
+import ProductEdit from '../views/product/edit.vue'
+
+
+import RecipientList from '../views/recipient/list'
+import RecipientAdd from '../views/recipient/add.vue'
+import RecipientEdit from '../views/recipient/edit.vue'
+
+
+import SiteList from '../views/site/list'
+import SiteAdd from '../views/site/add.vue'
+import SiteEdit from '../views/site/edit.vue'
+
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -34,6 +51,11 @@ const routes = [
     path: '/',
     name: 'index',
     component: Index
+  },
+  {
+    path: '/addItem',
+    name: 'add-item',
+    component: AddItem
   },
   {
     path: '/car',
@@ -121,6 +143,60 @@ const routes = [
     path: '/license/edit/:id',
     name: 'license-edit',
     component: LicenseEdit
+  },
+
+  /////////////////////////////////
+
+  {
+    path: '/site',
+    name: 'site-list',
+    component: SiteList
+  },
+  {
+    path: '/site/add',
+    name: 'site-add',
+    component: SiteAdd
+  },
+  {
+    path: '/site/edit/:id',
+    name: 'site-edit',
+    component: SiteEdit
+  },
+
+  /////////////////////////////////
+
+  {
+    path: '/product',
+    name: 'product-list',
+    component: ProductList
+  },
+  {
+    path: '/product/add',
+    name: 'product-add',
+    component: ProductAdd
+  },
+  {
+    path: '/product/edit/:id',
+    name: 'product-edit',
+    component: ProductEdit
+  },
+
+  /////////////////////////////////
+
+  {
+    path: '/recipient',
+    name: 'recipient-list',
+    component: RecipientList
+  },
+  {
+    path: '/recipient/add',
+    name: 'recipient-add',
+    component: RecipientAdd
+  },
+  {
+    path: '/recipient/edit/:id',
+    name: 'recipient-edit',
+    component: RecipientEdit
   },
 
 ]

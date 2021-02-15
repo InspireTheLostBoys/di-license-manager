@@ -1,11 +1,17 @@
 <template>
+<v-container>
     <v-form @submit.prevent="crudManager.create">
         <v-text-field
-            label="Name"
-            v-model="crudManager.formObj.name"
+            label="productName"
+            v-model="crudManager.formObj.productName"
+        ></v-text-field>
+        <v-text-field
+            label="productSupplier"
+            v-model="crudManager.formObj.productSupplier"
         ></v-text-field>
         <v-btn type="submit" color="success">Submit</v-btn>
     </v-form>
+</v-container>
 </template>
 
 <script>

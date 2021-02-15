@@ -89,7 +89,7 @@ const methods = {
 
 function callService(method, endpoint, formObj) {
     return new Promise((res, rej) => {
-        Axios[method]('http://localhost:50482/' + endpoint, formObj)
+        Axios[method]('http://localhost:50211/' + endpoint, formObj)
             .then(r => {
                 res(r.data);
             })

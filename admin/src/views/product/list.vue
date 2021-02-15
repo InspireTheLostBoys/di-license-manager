@@ -1,13 +1,14 @@
 <template>
-  <div>
+  <v-container>
+  <h2>Products: </h2>
     <v-btn @click="crudManager.onAdd()">Add</v-btn>
     <v-data-table :headers="headers" :items="crudManager.list">
       <template v-slot:item.actions="{ item }">
-        <v-btn @click="editItem(item)">edit</v-btn>
-        <v-btn @click="deleteItem(item)">delete</v-btn>
+        <v-btn text @click="editItem(item)">edit</v-btn>
+        <v-btn text @click="deleteItem(item)">delete</v-btn>
       </template>
     </v-data-table>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -19,24 +20,12 @@ export default {
       crudManager: new ProductCrud(this),
       headers: [
         {
-          text: "Supplier",
-          value: "supplier",
+          text: "productSupplier",
+          value: "productSupplier",
         },
         {
           text: "ProductName",
           value: "productName",
-        },
-         {
-          text: "ProductDescription",
-          value: "productDescription",
-        },
-         {
-          text: "ProductID",
-          value: "productID",
-        },
-        {
-          text: "DateTime",
-          value: "dateTime",
         },
         {
           text: "",
