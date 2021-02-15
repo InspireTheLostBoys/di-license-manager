@@ -1,4 +1,5 @@
 <template>
+<v-container>
     <v-form @submit.prevent="crudManager.update">
        <v-text-field
             label="Product Name"
@@ -18,6 +19,7 @@
         ></v-text-field>
         <v-btn type="submit" color="success">Submit</v-btn>
     </v-form>
+</v-container>
 </template>
 
 <script>

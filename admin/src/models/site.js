@@ -2,7 +2,7 @@ import { ModelBase } from './base'
 
 export class Site extends ModelBase {
     id = 0;
-    name = "";
+    siteName = "";
     customerID = 0;
 
     constructor(dataObj) {

@@ -1,5 +1,7 @@
 <template>
   <v-container>
+  <h2>Recipients: </h2>
+
     <v-btn @click="crudManager.onAdd()">Add</v-btn>
     <v-data-table :headers="headers" :items="crudManager.list">
       <template v-slot:item.actions="{ item }">
