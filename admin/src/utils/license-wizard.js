@@ -22,6 +22,7 @@ class _LicenseWizard {
 
     setCtx(ctx) {
         this.ctx = ctx;
+        
         this.crud_customer = new CustomerCrud(this.ctx);
         this.crud_site = new SiteCrud(this.ctx);
         this.crud_product = new ProductCrud(this.ctx);

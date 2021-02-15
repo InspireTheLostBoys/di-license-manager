@@ -5,4 +5,7 @@ export class CarCrud extends CrudManager {
     constructor(context) {
         super('car', Car, context)
     }
+
+    afterCreate() {
+    }
 }
