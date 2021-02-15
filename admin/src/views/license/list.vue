@@ -19,17 +19,17 @@ export default {
       crudManager: new LicenseCrud(this),
       headers: [
         {
-          text: "ProductID",
+          text: "Product ID",
           value: "productID",
         },
         
         {
-          text: "SiteID",
+          text: "Site ID",
           value: "siteID",
         },
         
         {
-          text: "AdminUserID",
+          text: "Admin User ID",
           value: "adminUserID",
         },
         
@@ -39,7 +39,7 @@ export default {
         },
         
         {
-          text: "ExpiryDate",
+          text: "Expiry Date",
           value: "expiryDate",
         },
         

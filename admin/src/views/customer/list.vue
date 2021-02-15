@@ -20,19 +20,19 @@ export default {
       crudManager: new CustomerCrud(this),
       headers: [
         {
-          text: "CustomerName",
+          text: "Customer Name",
           value: "customerName",
         },
         {
-          text: "EmailAddress",
+          text: "Email Address",
           value: "emailAddress",
         },
         {
-          text: "AddressLine1",
+          text: "Address Line 1",
           value: "addressLine1",
         },
         {
-          text: "AddressLine2",
+          text: "Address Line 2",
           value: "addressLine2",
         },
         {
@@ -40,12 +40,12 @@ export default {
           value: "city",
         },
         {
-          text: "ProvinceOrState",
+          text: "Province Or State",
           value: "provinceOrState",
         },
         ,
         {
-          text: "PostalCode",
+          text: "Postal Code",
           value: "postalCode",
         },
         {

@@ -20,15 +20,15 @@ export default {
       crudManager: new AdminUserCrud(this),
       headers: [
         {
-          text: "FirstName",
+          text: "First Name",
           value: "firstName",
         },
         {
-          text: "LastName",
+          text: "Last Name",
           value: "lastName",
         },
         {
-          text: "EmailAddress",
+          text: "Email Address",
           value: "emailAddress",
         },
         {

@@ -18,24 +18,24 @@ export default {
     return {
       crudManager: new ProductCrud(this),
       headers: [
+         {
+          text: "Product Name",
+          value: "productName",
+        },
+        {
+          text: "Product Description",
+          value: "productDescription",
+        },
         {
           text: "Supplier",
           value: "supplier",
-        },
-        {
-          text: "ProductName",
-          value: "productName",
-        },
+        }, 
          {
-          text: "ProductDescription",
-          value: "productDescription",
-        },
-         {
-          text: "ProductID",
+          text: "Product ID",
           value: "productID",
         },
         {
-          text: "DateTime",
+          text: "Date Time",
           value: "dateTime",
         },
         {

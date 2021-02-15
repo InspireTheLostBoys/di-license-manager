@@ -2,15 +2,15 @@
 <v-container>
     <v-form @submit.prevent="crudManager.create">
         <v-text-field
-            label="Firstname"
+            label="First Name"
             v-model="crudManager.formObj.firstName"
         ></v-text-field>
         <v-text-field
-            label="LastName"
+            label="Last Name"
             v-model="crudManager.formObj.lastName"
         ></v-text-field>
         <v-text-field
-            label="EmailAddress"
+            label="Email Address"
             v-model="crudManager.formObj.emailAddress"
         ></v-text-field>
         <v-text-field

@@ -23,7 +23,7 @@ export default {
           value: "name",
         },
         {
-          text: "CustomerID",
+          text: "Customer ID",
           value: "customerID",
         },
         {

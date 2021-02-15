@@ -2,15 +2,15 @@
 <v-container>
     <v-form @submit.prevent="crudManager.update">
         <v-text-field
-            label="ProductID"
+            label="Product ID"
             v-model="crudManager.formObj.productID"
         ></v-text-field>
         <v-text-field
-            label="SiteID"
+            label="Site ID"
             v-model="crudManager.formObj.siteID"
         ></v-text-field>
         <v-text-field
-            label="AdminUserID"
+            label="AdminUser ID"
             v-model="crudManager.formObj.adminUserID"
         ></v-text-field>
         <v-text-field
@@ -18,7 +18,7 @@
             v-model="crudManager.formObj.email"
         ></v-text-field>
         <v-text-field
-            label="ExpiryDate"
+            label="Expiry Date"
             v-model="crudManager.formObj.expiryDate"
         ></v-text-field>
         <v-text-field

@@ -19,7 +19,7 @@ export default {
       crudManager: new EmailSettingsCrud(this),
       headers: [
         {
-          text: "LicenseExpiresInXMonths",
+          text: "License Expires In X Months",
           value: "licenseExpiresInXMonths",
         },
         {

@@ -27,6 +27,15 @@ import LicenseList from '../views/license/list'
 import LicenseAdd from '../views/license/add.vue'
 import LicenseEdit from '../views/license/edit.vue'
 
+import ProductList from '../views/product/list'
+import ProductAdd from '../views/product/add.vue'
+import ProductEdit from '../views/product/edit.vue'
+
+import SiteList from '../views/site/list'
+import SiteAdd from '../views/site/add.vue'
+import SiteEdit from '../views/site/edit.vue'
+
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -121,6 +130,38 @@ const routes = [
     path: '/license/edit/:id',
     name: 'license-edit',
     component: LicenseEdit
+  },
+ ////////////////////////////////////
+  {
+    path: '/product',
+    name: 'product-list',
+    component: ProductList
+  },
+  {
+    path: '/product/add',
+    name: 'product-add',
+    component: ProductAdd
+  },
+  {
+    path: '/product/edit/:id',
+    name: 'product-edit',
+    component: ProductEdit
+  },
+  ////////////////////////////////////
+  {
+    path: '/site',
+    name: 'site-list',
+    component: SiteList
+  },
+  {
+    path: '/site/add',
+    name: 'site-add',
+    component: SiteAdd
+  },
+  {
+    path: '/site/edit/:id',
+    name: 'site-edit',
+    component: SiteEdit
   },
 
 ]
