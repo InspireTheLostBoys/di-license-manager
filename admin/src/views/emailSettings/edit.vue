@@ -2,8 +2,8 @@
 <v-container>
     <v-form @submit.prevent="crudManager.update">
         <v-text-field
-            label="Name"
-            v-model="crudManager.formObj.name"
+            label="licenseExpiresInXMonths"
+            v-model="crudManager.formObj.licenseExpiresInXMonths"
         ></v-text-field>
         <v-btn type="submit" color="success">Submit</v-btn>
     </v-form>
@@ -11,12 +11,12 @@
 </template>
 
 <script>
-import { CarCrud } from '../../libs/car'
+import { EmailSettingsCrud } from '../../libs/emailSettings'
 
 export default {
     data() {
         return {
-            crudManager: new CarCrud(this)
+            crudManager: new EmailSettingsCrud(this)
         }
     }
 }

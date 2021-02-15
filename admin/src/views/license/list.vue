@@ -11,17 +11,43 @@
 </template>
 
 <script>
-import { CarCrud } from "../../libs/car";
+import { LicenseCrud } from "../../libs/license";
 
 export default {
   data() {
     return {
-      crudManager: new CarCrud(this),
+      crudManager: new LicenseCrud(this),
       headers: [
         {
-          text: "Name",
-          value: "name",
+          text: "ProductID",
+          value: "productID",
         },
+        
+        {
+          text: "SiteID",
+          value: "siteID",
+        },
+        
+        {
+          text: "AdminUserID",
+          value: "adminUserID",
+        },
+        
+        {
+          text: "Email",
+          value: "email",
+        },
+        
+        {
+          text: "ExpiryDate",
+          value: "expiryDate",
+        },
+        
+        {
+          text: "Notes",
+          value: "notes",
+        },
+
         {
           text: "",
           value: "actions",
