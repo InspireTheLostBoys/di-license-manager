@@ -2,31 +2,31 @@
 <v-container>
     <v-form @submit.prevent="crudManager.create">
         <v-text-field
-            label="customerName"
+            label="Customer Name"
             v-model="crudManager.formObj.customerName"
         ></v-text-field>
         <v-text-field
-            label="emailAddress"
+            label="Email Address"
             v-model="crudManager.formObj.emailAddress"
         ></v-text-field>
         <v-text-field
-            label="addressLine1"
+            label="Address Line 1"
             v-model="crudManager.formObj.addressLine1"
         ></v-text-field>
         <v-text-field
-            label="addressLine2"
+            label="Address Line 2"
             v-model="crudManager.formObj.addressLine2"
         ></v-text-field>
         <v-text-field
-            label="city"
+            label="City"
             v-model="crudManager.formObj.city"
         ></v-text-field>
         <v-text-field
-            label="provinceOrState"
+            label="Province Or State"
             v-model="crudManager.formObj.provinceOrState"
         ></v-text-field>
         <v-text-field
-            label="postalCode"
+            label="Postal Code"
             v-model="crudManager.formObj.postalCode"
         ></v-text-field>
 

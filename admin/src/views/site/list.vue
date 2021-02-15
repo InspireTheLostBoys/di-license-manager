@@ -24,7 +24,7 @@ export default {
           value: "siteName",
         },
         {
-          text: "CustomerID",
+          text: "Customer ID",
           value: "customerID",
         },
         {

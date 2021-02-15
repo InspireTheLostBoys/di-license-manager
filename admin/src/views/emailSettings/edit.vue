@@ -2,7 +2,7 @@
 <v-container>
     <v-form @submit.prevent="crudManager.update">
         <v-text-field
-            label="licenseExpiresInXMonths"
+            label="license Expires In X Months"
             v-model="crudManager.formObj.licenseExpiresInXMonths"
         ></v-text-field>
         <v-btn type="submit" color="success">Submit</v-btn>
