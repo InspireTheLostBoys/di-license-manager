@@ -14,7 +14,12 @@
 export default {
   name: "App",
   data: () => ({
-    //
   }),
+  created() {
+    this.setLicenseWizardCtx(this);
+  },
+  mounted() {
+    console.log(this.license_wizard())
+  },
 };
 </script>

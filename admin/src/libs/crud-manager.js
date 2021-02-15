@@ -45,11 +45,15 @@ export class CrudManager {
             this.formObj
         )
         .then(response => {
-            this.ctx.$router.push(`/${this.endpoint}`);
+            this.afterCreate();
         })
         .catch(err => {
             console.log(err);
         })
+    }
+
+    afterCreate() {
+        this.ctx.$router.push(`/${this.endpoint}`);
     }
 
     update() {
@@ -59,11 +63,15 @@ export class CrudManager {
             this.formObj
         )
         .then(response => {
-            this.ctx.$router.push(`/${this.endpoint}`);
+            this.afterUpdate();
         })
         .catch(err => {
             console.log(err);
         })
+    }
+
+    afterUpdate() {
+        this.ctx.$router.push(`/${this.endpoint}`);
     }
 
     delete(dataObj) {
@@ -80,14 +88,14 @@ export class CrudManager {
     }
 }
 
-const methods = {
+export const methods = {
     get: "get",
     post: "post",
     put: "put",
     delete: "delete"
 }
 
-function callService(method, endpoint, formObj) {
+export function callService(method, endpoint, formObj) {
     return new Promise((res, rej) => {
         Axios[method]('http://localhost:50211/' + endpoint, formObj)
             .then(r => {
