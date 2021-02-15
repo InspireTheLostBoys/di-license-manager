@@ -7,17 +7,25 @@ import CarList from '../views/car/list.vue'
 import CarAdd from '../views/car/add.vue'
 import CarEdit from '../views/car/edit.vue'
 
-import LicenseList from '../views/license/list.vue'
+
+import AdminUserList from '../views/adminUser/list'
+import AdminUserAdd from '../views/adminUser/add.vue'
+import AdminUserEdit from '../views/adminUser/edit.vue'
+
+
+import CustomerList from '../views/customer/list'
+import CustomerAdd from '../views/customer/add.vue'
+import CustomerEdit from '../views/customer/edit.vue'
+
+
+import EmailSettingsList from '../views/emailSettings/list'
+import EmailSettingsAdd from '../views/emailSettings/add.vue'
+import EmailSettingsEdit from '../views/emailSettings/edit.vue'
+
+
+import LicenseList from '../views/license/list'
 import LicenseAdd from '../views/license/add.vue'
 import LicenseEdit from '../views/license/edit.vue'
-
-import ProductList from '../views/product/list.vue'
-import ProductAdd from '../views/product/add.vue'
-import ProductEdit from '../views/product/edit.vue'
-
-import SiteList from '../views/site/list.vue'
-import SiteAdd from '../views/site/add.vue'
-import SiteEdit from '../views/site/edit.vue'
 
 Vue.use(VueRouter)
 
@@ -42,51 +50,79 @@ const routes = [
     name: 'cars-edit',
     component: CarEdit
   },
+
+  /////////////////////////////////
+
+  {
+    path: '/adminUser',
+    name: 'adminUsers-list',
+    component: AdminUserList
+  },
+  {
+    path: '/adminUser/add',
+    name: 'adminUsers-add',
+    component: AdminUserAdd
+  },
+  {
+    path: '/adminUser/edit/:id',
+    name: 'adminUsers-edit',
+    component: AdminUserEdit
+  },
+
+  /////////////////////////////////
+
+  {
+    path: '/customer',
+    name: 'customers-list',
+    component: CustomerList
+  },
+  {
+    path: '/customer/add',
+    name: 'customers-add',
+    component: CustomerAdd
+  },
+  {
+    path: '/customer/edit/:id',
+    name: 'customers-edit',
+    component: CustomerEdit
+  },
+
+  //////////////////////////////////
+
+  {
+    path: '/email',
+    name: 'emailSettings-list',
+    component: EmailSettingsList
+  },
+  {
+    path: '/email/add',
+    name: 'email-add',
+    component: EmailSettingsAdd
+  },
+  {
+    path: '/email/edit/:id',
+    name: 'email-edit',
+    component: EmailSettingsEdit
+  },
+
+  ////////////////////////////////////
+
   {
     path: '/license',
-    name: 'licenses-list',
+    name: 'license-list',
     component: LicenseList
   },
   {
     path: '/license/add',
-    name: 'licenses-add',
+    name: 'license-add',
     component: LicenseAdd
   },
   {
     path: '/license/edit/:id',
-    name: 'Licenses-edit',
+    name: 'license-edit',
     component: LicenseEdit
   },
-  {
-    path: '/product',
-    name: 'products-list',
-    component: ProductList
-  },
-  {
-    path: '/product/add',
-    name: 'products-add',
-    component: ProductAdd
-  },
-  {
-    path: '/product/edit/:id',
-    name: 'products-edit',
-    component: ProductEdit
-  },
-  {
-    path: '/site',
-    name: 'sites-list',
-    component: SiteList
-  },
-  {
-    path: '/site/add',
-    name: 'sites-add',
-    component: SiteAdd
-  },
-  {
-    path: '/site/edit/:id',
-    name: 'sites-edit',
-    component: SiteEdit
-  },
+
 ]
 
 const router = new VueRouter({

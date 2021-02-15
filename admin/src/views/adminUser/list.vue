@@ -3,51 +3,46 @@
     <v-btn @click="crudManager.onAdd()">Add</v-btn>
     <v-data-table :headers="headers" :items="crudManager.list">
       <template v-slot:item.actions="{ item }">
-        <v-btn @click="editItem(item)">edit</v-btn>
-        <v-btn @click="deleteItem(item)">delete</v-btn>
+        <v-btn text @click="editItem(item)">edit</v-btn>
+        <v-btn text @click="deleteItem(item)">delete</v-btn>
       </template>
     </v-data-table>
   </v-container>
 </template>
 
 <script>
-import { LicenseCrud } from "../../libs/license";
+import { AdminUserCrud } from "../../libs/adminUser";
 
 export default {
+  name: "adminUsers-list",
   data() {
     return {
-      crudManager: new LicenseCrud(this),
+      crudManager: new AdminUserCrud(this),
       headers: [
         {
-          text: "ProductID",
-          value: "productID",
+          text: "FirstName",
+          value: "firstName",
         },
-        
         {
-          text: "SiteID",
-          value: "siteID",
+          text: "LastName",
+          value: "lastName",
         },
-        
         {
-          text: "AdminUserID",
-          value: "adminUserID",
+          text: "EmailAddress",
+          value: "emailAddress",
         },
-        
         {
-          text: "Email",
-          value: "email",
+          text: "Password",
+          value: "password",
         },
-        
         {
-          text: "ExpiryDate",
-          value: "expiryDate",
+          text: "Active",
+          value: "active",
         },
-        
         {
-          text: "Notes",
-          value: "notes",
+          text: "LastLoggedInDateTime",
+          value: "lastLoggedInDateTime",
         },
-
         {
           text: "",
           value: "actions",

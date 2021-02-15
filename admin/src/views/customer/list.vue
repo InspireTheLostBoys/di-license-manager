@@ -3,51 +3,51 @@
     <v-btn @click="crudManager.onAdd()">Add</v-btn>
     <v-data-table :headers="headers" :items="crudManager.list">
       <template v-slot:item.actions="{ item }">
-        <v-btn @click="editItem(item)">edit</v-btn>
-        <v-btn @click="deleteItem(item)">delete</v-btn>
+        <v-btn text @click="editItem(item)">edit</v-btn>
+        <v-btn text @click="deleteItem(item)">delete</v-btn>
       </template>
     </v-data-table>
   </v-container>
 </template>
 
 <script>
-import { LicenseCrud } from "../../libs/license";
+import { CustomerCrud } from "../../libs/customer";
 
 export default {
+  name: "customers-list",
   data() {
     return {
-      crudManager: new LicenseCrud(this),
+      crudManager: new CustomerCrud(this),
       headers: [
         {
-          text: "ProductID",
-          value: "productID",
+          text: "CustomerName",
+          value: "customerName",
         },
-        
         {
-          text: "SiteID",
-          value: "siteID",
+          text: "EmailAddress",
+          value: "emailAddress",
         },
-        
         {
-          text: "AdminUserID",
-          value: "adminUserID",
+          text: "AddressLine1",
+          value: "addressLine1",
         },
-        
         {
-          text: "Email",
-          value: "email",
+          text: "AddressLine2",
+          value: "addressLine2",
         },
-        
         {
-          text: "ExpiryDate",
-          value: "expiryDate",
+          text: "City",
+          value: "city",
         },
-        
         {
-          text: "Notes",
-          value: "notes",
+          text: "ProvinceOrState",
+          value: "provinceOrState",
         },
-
+        ,
+        {
+          text: "PostalCode",
+          value: "postalCode",
+        },
         {
           text: "",
           value: "actions",
