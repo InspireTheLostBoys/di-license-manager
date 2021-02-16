@@ -12,6 +12,9 @@ import noe_site from '../views/license-wizard/noe-site.vue'
 import site_select from '../views/site/select.vue'
 
 
+import noe_product from '../views/license-wizard/noe-product.vue'
+import product_select from '../views/product/select.vue'
+
 
 
 import CarList from '../views/car/list.vue'
@@ -72,6 +75,11 @@ const routes = [
     component: noe_site
   },
   {
+    path: '/new-or-existing-product',
+    name: 'noe_product',
+    component: noe_product
+  },
+  {
     path: '/customer-select',
     name: 'customer-select',
     component: customer_select
@@ -81,6 +89,14 @@ const routes = [
     name: 'site-select',
     component: site_select
   },
+  {
+    path: '/product-select',
+    name: 'product-select',
+    component: product_select
+  },
+
+////////////////////////////////////////
+
   {
     path: '/car',
     name: 'cars-list',
@@ -203,41 +219,6 @@ const routes = [
 
   /////////////////////////////////
 
-  {
-    path: '/site',
-    name: 'site-list',
-    component: SiteList
-  },
-  {
-    path: '/site/add',
-    name: 'site-add',
-    component: SiteAdd
-  },
-  {
-    path: '/site/edit/:id',
-    name: 'site-edit',
-    component: SiteEdit
-  },
-
-  /////////////////////////////////
-
-  {
-    path: '/product',
-    name: 'product-list',
-    component: ProductList
-  },
-  {
-    path: '/product/add',
-    name: 'product-add',
-    component: ProductAdd
-  },
-  {
-    path: '/product/edit/:id',
-    name: 'product-edit',
-    component: ProductEdit
-  },
-
-  /////////////////////////////////
 
   {
     path: '/recipient',

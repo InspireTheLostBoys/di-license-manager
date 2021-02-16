@@ -24,21 +24,11 @@ export default {
           value: "productName",
         },
         {
-          text: "Product Description",
-          value: "productDescription",
-        },
-        {
-          text: "Supplier",
-          value: "supplier",
+          text: "productSupplier",
+          value: "productSupplier",
+
         }, 
-         {
-          text: "Product ID",
-          value: "productID",
-        },
-        {
-          text: "Date Time",
-          value: "dateTime",
-        },
+         
         {
           text: "",
           value: "actions",
