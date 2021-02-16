@@ -16,7 +16,6 @@ export class CrudManager {
     }
 
     onAdd() {
-        console.log(this)
         this.ctx.$router.push(`/${this.endpoint}/add`);
     }
 
@@ -45,7 +44,7 @@ export class CrudManager {
             this.formObj
         )
         .then(response => {
-            this.afterCreate();
+            this.afterCreate(response);
         })
         .catch(err => {
             console.log(err);
@@ -63,7 +62,7 @@ export class CrudManager {
             this.formObj
         )
         .then(response => {
-            this.afterUpdate();
+            this.afterUpdate(response);
         })
         .catch(err => {
             console.log(err);

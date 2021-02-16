@@ -9,7 +9,7 @@
     <v-list-item three-line>
       <v-list-item-content>
         <v-list-item-title class="headline mb-1">
-          Do you want to add a license?
+          select or create product
         </v-list-item-title>
       </v-list-item-content>
     </v-list-item>
@@ -19,18 +19,18 @@
         outlined
         rounded
         text
-        @click="addLicense"
+        @click="select"
       >
-        Yes
+        Select
       </v-btn>
 
       <v-btn
         outlined
         rounded
         text
-        @click="goToHomePage"
+        @click="create"
       >
-        No
+        Create
       </v-btn>
     </v-card-actions>
   </v-card>
@@ -43,13 +43,14 @@ export default {
 
   }),
   methods: {
-    addLicense(){
+    select(){
       let self = this;
-      self.$router.push('/license');
+      self.$router.push('/to-select-product');
     },
 
-    goToHomePage(){
-      alert("homePage");
+    create(){
+      let self = this;
+      self.$router.push('/product');
     }
   }
 }

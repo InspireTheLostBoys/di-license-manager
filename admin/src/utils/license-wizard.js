@@ -24,8 +24,23 @@ class _LicenseWizard {
         this.ctx = ctx;
         
         this.crud_customer = new CustomerCrud(this.ctx);
+        this.crud_customer.afterCreateRoute = "/customer-select"
+
+        // console.log(this.crud_customer)
+
         this.crud_site = new SiteCrud(this.ctx);
         this.crud_product = new ProductCrud(this.ctx);
+    }
+
+    setCustomer(customer) {
+        this.customer = customer;
+        this.ctx.$router.push('/new-or-existing-site')
+    }
+
+    setSite() {
+    }
+
+    setProduct() {
     }
 
     createLicense() {

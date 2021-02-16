@@ -1,6 +1,6 @@
 <template>
 <v-container>
-    <v-form @submit.prevent="crudManager.create">
+    <v-form @submit.prevent="crudManager.create()">
         <v-text-field
             label="Customer Name"
             v-model="crudManager.formObj.customerName"
@@ -41,7 +41,7 @@ import { CustomerCrud } from '../../libs/customer'
 export default {
     data() {
         return {
-            crudManager: new CustomerCrud(this)
+            crudManager: this.license_wizard().crud_customer
         }
     }
 }
