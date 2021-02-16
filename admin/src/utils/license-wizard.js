@@ -29,6 +29,8 @@ class _LicenseWizard {
         // console.log(this.crud_customer)
 
         this.crud_site = new SiteCrud(this.ctx);
+        this.crud_site.afterCreateRoute = "/site-select"
+
         this.crud_product = new ProductCrud(this.ctx);
     }
 
@@ -37,7 +39,9 @@ class _LicenseWizard {
         this.ctx.$router.push('/new-or-existing-site')
     }
 
-    setSite() {
+    setSite(site) {
+        this.site = site;
+        this.ctx.$router.push('/new-or-existing-product')
     }
 
     setProduct() {

@@ -2,11 +2,16 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Index from '../views/Index.vue'
+
+
+
 import noe_customer from '../views/license-wizard/noe-customer.vue'
 import customer_select from '../views/customer/select.vue'
 
-import AddProduct from '../views/nesting/addProduct.vue'
-import toSelectProduct from '../views/nesting/toSelectProduct.vue'
+import noe_site from '../views/license-wizard/noe-site.vue'
+import site_select from '../views/site/select.vue'
+
+
 
 
 import CarList from '../views/car/list.vue'
@@ -62,19 +67,19 @@ const routes = [
     component: noe_customer
   },
   {
+    path: '/new-or-existing-site',
+    name: 'noe_site',
+    component: noe_site
+  },
+  {
     path: '/customer-select',
     name: 'customer-select',
     component: customer_select
   },
   {
-    path: '/add-product',
-    name: 'add-product',
-    component: AddProduct
-  },
-  {
-    path: '/to-select-product',
-    name: 'to-select-product',
-    component: toSelectProduct
+    path: '/site-select',
+    name: 'site-select',
+    component: site_select
   },
   {
     path: '/car',

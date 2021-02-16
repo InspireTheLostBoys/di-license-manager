@@ -1,6 +1,6 @@
 <template>
   <v-container>
-      <v-form @submit.prevent="crudManager.create">
+      <v-form @submit.prevent="crudManager.create()">
         <v-text-field
           label="Site Name"
           v-model="crudManager.formObj.siteName"
@@ -21,7 +21,7 @@ import { SiteCrud } from "../../libs/site";
 export default {
   data() {
     return {
-      crudManager: new SiteCrud(this),
+      crudManager: this.license_wizard().crud_site
     };
   },
 };
