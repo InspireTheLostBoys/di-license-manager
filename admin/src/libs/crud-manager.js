@@ -87,6 +87,7 @@ export class CrudManager {
     }
 }
 
+
 export const methods = {
     get: "get",
     post: "post",
@@ -105,6 +106,7 @@ export function callService(method, endpoint, formObj) {
             })
     })
 }
+
 
 function CheckEdit(ctrl) {
     let params = ctrl.ctx.$route.params;
