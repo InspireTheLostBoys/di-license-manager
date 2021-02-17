@@ -21,7 +21,7 @@ class _LicenseWizard {
     }
 
     setCtx(ctx) {
-        this.ctx = ctx;
+        this.ctx = ctx;     //context
         
         this.crud_customer = new CustomerCrud(this.ctx);
         this.crud_customer.afterCreateRoute = "/customer-select"
@@ -48,13 +48,14 @@ class _LicenseWizard {
 
     setProduct(product) {
         this.product = product;
-        this.ctx.$router.push('/license')
+        this.createLicense()
     }
 
     createLicense() {
         var license = new License();
-        license.siteID = this.site;
-        license.productID = this.product;
+        license.siteID = this.site.id;
+        license.productID = this.product.id;
+        license.adminUserID = 1;
 
         callService(
             methods.post,
@@ -63,6 +64,7 @@ class _LicenseWizard {
         )
         .then(response => {
             console.log(response.data);
+            this.ctx.$router.push('/license')
         })
     }
 }
