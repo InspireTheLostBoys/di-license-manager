@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p+wklU5yxOSgkKeihQ6w16LB0VWFWjxjwXI2mXkPKWeyLyYItltRBf6xPAtmNzVo5R80jyv1XW1hWgWb1i7lpg==",
+  "dgSpecHash": "fx6oLshFsIawn9tV7dPW97dW2lSxHVghBpKLPy6xDJa8SRhB9Z/r7MpFZ2iBM+6UEQL1O9Dh8L7ozgkLcgxoqw==",
   "success": true,
-  "projectFilePath": "C:\\Work\\GIT\\di-license-manager\\server\\Models.System\\Models.System.csproj",
+  "projectFilePath": "C:\\work\\di-license-manager\\server\\Models.System\\Models.System.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

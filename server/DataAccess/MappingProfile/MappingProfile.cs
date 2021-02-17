@@ -19,8 +19,8 @@ namespace DataAccess.MappingProfile
                 CreateMap<Models.System.EmailSetting, Models.System.DTO.EmailSettingsDTO>();
                 CreateMap<Models.System.DTO.EmailSettingsDTO, Models.System.EmailSetting>();
 
-                CreateMap<Models.System.CustomerRecipient, Models.System.DTO.CustomerRecipientDTO>();
-                CreateMap<Models.System.DTO.CustomerRecipientDTO, Models.System.CustomerRecipient>();
+                CreateMap<Models.System.Recipient, Models.System.DTO.RecipientDTO>();
+                CreateMap<Models.System.DTO.RecipientDTO, Models.System.Recipient>();
 
                 CreateMap<Models.System.License, Models.System.DTO.LicenseDTO>();
                 CreateMap<Models.System.DTO.LicenseDTO, Models.System.License>();

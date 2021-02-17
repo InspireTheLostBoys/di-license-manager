@@ -8,14 +8,21 @@ using System.Threading.Tasks;
 
 namespace Models.System
 {
-    [Table("Car")]
-    public class Car
+    [Table("Recipient")]
+    public class Recipient
     {
         [Key]
-        [Required]
         public int ID { get; set; }
+
         [Required]
-        [StringLength(150)]
-        public string Name { get; set; }
+        public int SiteID { get; set; }
+
+        [Required]
+        public string RecipientName { get; set; }
+
+        [Required]
+        public string EmailAddress { get; set; }
+
+        public virtual Site Site { get; set; }
     }
 }

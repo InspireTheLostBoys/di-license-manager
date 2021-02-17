@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Models.System.DTO
-{
 
+{
     public class AdminUserDTO : BaseResponse.BaseResponseDTO
     {
-
         public int ID { get; set; }
 
         public string FirstName { get; set; }
@@ -20,6 +17,8 @@ namespace Models.System.DTO
 
         public bool Active { get; set; }
 
-        public DateTime? DateTime { get; set; }
+        public DateTime? LastLoggedInDateTime { get; set; }
+
+
     }
 }

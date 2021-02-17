@@ -29,7 +29,7 @@ namespace DILicenceManagerSerever.Controllers
         {
             try
             {
-                List<Models.System.CustomerRecipient> dbList = _context.CustomerRecipients.ToList();
+                List<Models.System.Recipient> dbList = _context.CustomerRecipients.ToList();
                 return Ok(dbList);
             }
             catch (Exception exc)
@@ -54,7 +54,7 @@ namespace DILicenceManagerSerever.Controllers
 
 
 
-                var retVal = _mapper.Map<Models.System.DTO.CustomerRecipientDTO>(dbItem);
+                var retVal = _mapper.Map<Models.System.DTO.RecipientDTO>(dbItem);
 
 
 
@@ -68,11 +68,11 @@ namespace DILicenceManagerSerever.Controllers
         }
 
         [HttpPost]
-        public ActionResult CreateCustomer([FromBody] Models.System.DTO.CustomerRecipientDTO requestDTO)
+        public ActionResult CreateCustomer([FromBody] Models.System.DTO.RecipientDTO requestDTO)
         {
             try
             {
-                var request = _mapper.Map<Models.System.CustomerRecipient>(requestDTO);
+                var request = _mapper.Map<Models.System.Recipient>(requestDTO);
 
 
 
@@ -88,7 +88,7 @@ namespace DILicenceManagerSerever.Controllers
 
 
 
-                return Ok(_mapper.Map<Models.System.DTO.CustomerRecipientDTO>(request));
+                return Ok(_mapper.Map<Models.System.DTO.RecipientDTO>(request));
             }
             catch (Exception exc)
             {
@@ -98,11 +98,11 @@ namespace DILicenceManagerSerever.Controllers
 
         }
         [HttpPut]
-        public ActionResult UpdateCustomerRecipient([FromBody] Models.System.CustomerRecipient requestDTO)
+        public ActionResult UpdateCustomerRecipient([FromBody] Models.System.Recipient requestDTO)
         {
             try
             {
-                var request = _mapper.Map<Models.System.CustomerRecipient>(requestDTO);
+                var request = _mapper.Map<Models.System.Recipient>(requestDTO);
                 _context.Update(request);
                 _context.SaveChanges();
                 if (request == null)
@@ -112,7 +112,7 @@ namespace DILicenceManagerSerever.Controllers
 
 
 
-                return Ok(_mapper.Map<Models.System.DTO.CustomerRecipientDTO>(request));
+                return Ok(_mapper.Map<Models.System.DTO.RecipientDTO>(request));
             }
             catch (Exception exc)
             {

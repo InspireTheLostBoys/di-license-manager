@@ -1,21 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Models.System.DTO
 {
-    public class LicenseDTO : BaseResponse.BaseResponseDTO
+    public class LicenseDTO
     {
+
         public int ID { get; set; }
 
-        public int SiteId { get; set; }
+        public int ProductID { get; set; }
 
-        public int ProductId { get; set; }
+        public int SiteID { get; set; }
 
-        public string CustomerName { get; set; }
-
-        public DateTime DateTime { get; set; }
+        public int AdminUserID { get; set; }
     }
 }

@@ -13,7 +13,9 @@ namespace Models.System
     {
         [Key]
         public int ID { get; set; }
+
+
         [Required]
-        public int EveryXMonths { get; set; }
+        public int LicenseExpiresInXMonths { get; set; }
     }
 }
