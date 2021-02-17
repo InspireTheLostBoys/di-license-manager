@@ -14,16 +14,6 @@ namespace DataAccess.Context
 
         }
 
-<<<<<<< HEAD
-        public DbSet<Models.System.AdminUser>AdminUsers { get; set; }
-        public DbSet<Models.System.Customer>Customers { get; set; }
-        public DbSet<Models.System.License>Licenses { get; set; }
-        public DbSet<Models.System.Product>Products { get; set; }
-        public DbSet<Models.System.EmailSetting>EmailSettings { get; set; }
-        public DbSet<Models.System.Site>Sites { get; set; }
-        public DbSet<Models.System.CustomerRecipient>CustomerRecipients { get; set; }
-        
-=======
         public DbSet<Models.System.AdminUser> AdminUser { get; set; }
         public DbSet<Models.System.Customer> Customer { get; set; }
         public DbSet<Models.System.License> License { get; set; }
@@ -31,7 +21,6 @@ namespace DataAccess.Context
         public DbSet<Models.System.EmailSettings> EmailSettings { get; set; }
         public DbSet<Models.System.Site> Site { get; set; }
         public DbSet<Models.System.Recipient> Recipient { get; set; }
->>>>>>> 1c41dc8900f93592ec367fd8b599d887e321c664
 
          protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
