@@ -1,0 +1,24 @@
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Models.System\bin\Debug\net5.0\Models.System.deps.json
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Models.System\bin\Debug\net5.0\Models.System.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Models.System\bin\Debug\net5.0\ref\Models.System.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Models.System\bin\Debug\net5.0\Models.System.pdb
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Models.System\obj\Debug\net5.0\Models.System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Models.System\obj\Debug\net5.0\Models.System.AssemblyInfoInputs.cache
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Models.System\obj\Debug\net5.0\Models.System.AssemblyInfo.cs
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Models.System\obj\Debug\net5.0\Models.System.csproj.CoreCompileInputs.cache
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Models.System\obj\Debug\net5.0\Models.System.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Models.System\obj\Debug\net5.0\ref\Models.System.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Models.System\obj\Debug\net5.0\Models.System.pdb
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Models.System\obj\Debug\net5.0\Models.System.csprojAssemblyReference.cache
+C:\Work\GIT\di-license-manager\server\Models.System\bin\Debug\net5.0\Models.System.deps.json
+C:\Work\GIT\di-license-manager\server\Models.System\bin\Debug\net5.0\Models.System.dll
+C:\Work\GIT\di-license-manager\server\Models.System\bin\Debug\net5.0\ref\Models.System.dll
+C:\Work\GIT\di-license-manager\server\Models.System\bin\Debug\net5.0\Models.System.pdb
+C:\Work\GIT\di-license-manager\server\Models.System\obj\Debug\net5.0\Models.System.csprojAssemblyReference.cache
+C:\Work\GIT\di-license-manager\server\Models.System\obj\Debug\net5.0\Models.System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\GIT\di-license-manager\server\Models.System\obj\Debug\net5.0\Models.System.AssemblyInfoInputs.cache
+C:\Work\GIT\di-license-manager\server\Models.System\obj\Debug\net5.0\Models.System.AssemblyInfo.cs
+C:\Work\GIT\di-license-manager\server\Models.System\obj\Debug\net5.0\Models.System.csproj.CoreCompileInputs.cache
+C:\Work\GIT\di-license-manager\server\Models.System\obj\Debug\net5.0\Models.System.dll
+C:\Work\GIT\di-license-manager\server\Models.System\obj\Debug\net5.0\ref\Models.System.dll
+C:\Work\GIT\di-license-manager\server\Models.System\obj\Debug\net5.0\Models.System.pdb

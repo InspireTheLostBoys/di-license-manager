@@ -1,0 +1,24 @@
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Email\bin\Debug\net5.0\Email.deps.json
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Email\bin\Debug\net5.0\Email.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Email\bin\Debug\net5.0\ref\Email.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Email\bin\Debug\net5.0\Email.pdb
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Email\obj\Debug\net5.0\Email.csprojAssemblyReference.cache
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Email\obj\Debug\net5.0\Email.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Email\obj\Debug\net5.0\Email.AssemblyInfoInputs.cache
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Email\obj\Debug\net5.0\Email.AssemblyInfo.cs
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Email\obj\Debug\net5.0\Email.csproj.CoreCompileInputs.cache
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Email\obj\Debug\net5.0\Email.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Email\obj\Debug\net5.0\ref\Email.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\Email\obj\Debug\net5.0\Email.pdb
+C:\Work\GIT\di-license-manager\server\Email\bin\Debug\net5.0\Email.deps.json
+C:\Work\GIT\di-license-manager\server\Email\bin\Debug\net5.0\Email.dll
+C:\Work\GIT\di-license-manager\server\Email\bin\Debug\net5.0\ref\Email.dll
+C:\Work\GIT\di-license-manager\server\Email\bin\Debug\net5.0\Email.pdb
+C:\Work\GIT\di-license-manager\server\Email\obj\Debug\net5.0\Email.csprojAssemblyReference.cache
+C:\Work\GIT\di-license-manager\server\Email\obj\Debug\net5.0\Email.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\GIT\di-license-manager\server\Email\obj\Debug\net5.0\Email.AssemblyInfoInputs.cache
+C:\Work\GIT\di-license-manager\server\Email\obj\Debug\net5.0\Email.AssemblyInfo.cs
+C:\Work\GIT\di-license-manager\server\Email\obj\Debug\net5.0\Email.csproj.CoreCompileInputs.cache
+C:\Work\GIT\di-license-manager\server\Email\obj\Debug\net5.0\Email.dll
+C:\Work\GIT\di-license-manager\server\Email\obj\Debug\net5.0\ref\Email.dll
+C:\Work\GIT\di-license-manager\server\Email\obj\Debug\net5.0\Email.pdb

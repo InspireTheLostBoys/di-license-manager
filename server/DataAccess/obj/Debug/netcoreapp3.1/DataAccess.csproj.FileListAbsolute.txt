@@ -1,0 +1,15 @@
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.deps.json
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.runtimeconfig.json
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.runtimeconfig.dev.json
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.pdb
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csprojAssemblyReference.cache
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfoInputs.cache
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfo.cs
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.pdb
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.genruntimeconfig.cache
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DataAccess\bin\Debug\netcoreapp3.1\Models.System.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DataAccess\bin\Debug\netcoreapp3.1\Models.System.pdb
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CopyComplete
