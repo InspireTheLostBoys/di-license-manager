@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Work\\GIT\\di-license-manager\\server\\EmailWorker\\EmailWorker.csproj": {}
+    "C:\\work\\di-license-manager\\server\\EmailWorker\\EmailWorker.csproj": {}
   },
   "projects": {
-    "C:\\Work\\GIT\\di-license-manager\\server\\EmailWorker\\EmailWorker.csproj": {
+    "C:\\work\\di-license-manager\\server\\EmailWorker\\EmailWorker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Work\\GIT\\di-license-manager\\server\\EmailWorker\\EmailWorker.csproj",
+        "projectUniqueName": "C:\\work\\di-license-manager\\server\\EmailWorker\\EmailWorker.csproj",
         "projectName": "EmailWorker",
-        "projectPath": "C:\\Work\\GIT\\di-license-manager\\server\\EmailWorker\\EmailWorker.csproj",
-        "packagesPath": "C:\\Users\\eb264\\.nuget\\packages\\",
-        "outputPath": "C:\\Work\\GIT\\di-license-manager\\server\\EmailWorker\\obj\\",
+        "projectPath": "C:\\work\\di-license-manager\\server\\EmailWorker\\EmailWorker.csproj",
+        "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
+        "outputPath": "C:\\work\\di-license-manager\\server\\EmailWorker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\eb264\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

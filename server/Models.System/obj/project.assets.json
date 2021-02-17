@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\eb264\\.nuget\\packages\\": {}
+    "C:\\Users\\jason\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Work\\GIT\\di-license-manager\\server\\Models.System\\Models.System.csproj",
+      "projectUniqueName": "C:\\work\\di-license-manager\\server\\Models.System\\Models.System.csproj",
       "projectName": "Models.System",
-      "projectPath": "C:\\Work\\GIT\\di-license-manager\\server\\Models.System\\Models.System.csproj",
-      "packagesPath": "C:\\Users\\eb264\\.nuget\\packages\\",
-      "outputPath": "C:\\Work\\GIT\\di-license-manager\\server\\Models.System\\obj\\",
+      "projectPath": "C:\\work\\di-license-manager\\server\\Models.System\\Models.System.csproj",
+      "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
+      "outputPath": "C:\\work\\di-license-manager\\server\\Models.System\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\eb264\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

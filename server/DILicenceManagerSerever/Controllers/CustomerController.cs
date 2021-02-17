@@ -2,12 +2,10 @@
 using log4net;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 
-namespace DILicenceManagerSerever.Controllers
+namespace DILicenseManagerServer.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -17,133 +15,134 @@ namespace DILicenceManagerSerever.Controllers
         private readonly DataAccess.Context.LicensingDbContext _context;
         private readonly IMapper _mapper;
 
-
-        public CustomerController(DataAccess.Context.LicensingDbContext context, IMapper mapper)
+        public CustomerController(DataAccess.Context.LicensingDbContext context, IMapper mapper)        //ctor ->tab, tab
         {
             _context = context;
             _mapper = mapper;
         }
 
+
+
         [HttpGet]
         public ActionResult GetAllCustomers()
         {
+
             try
             {
-                List<Models.System.Customer> dbList = _context.Customers.ToList();
-                return Ok(dbList);
+                var DBList = _context.Customer.ToList();
+                //List<Models.Sysem.Customer> dbList = _context.Customer.ToList();
+                return Ok(DBList);      //200 OK status code with the result from the database
             }
             catch (Exception exc)
             {
-                log.Error("Failed to get all customers", exc);
-                return BadRequest("Failed to get all customers : " + exc.Message);
+                log.Error("fail to get all customers", exc);
+                return BadRequest("fail to get all customers" + exc.Message);
             }
-
 
         }
 
-        [HttpGet("{ID:int}")]
-        public ActionResult GetSingleCustomer(int ID)
+
+
+        [HttpGet]
+        [Route("Single")]
+
+        public ActionResult GetSingleCustomer(int CustomerID)
         {
+
             try
             {
-                var dbItem = _context.Customers.Find(ID);
-                if (dbItem == null)
+                var DBItem = _context.Customer.Find(CustomerID);
+                if (DBItem == null)
                 {
-                    return BadRequest("There is no Customer found by that id: " + ID);
+                    return BadRequest("There is no Customer found by that id: " + CustomerID);
                 }
 
-
-
-                var retVal = _mapper.Map<Models.System.DTO.CustomerDTO>(dbItem);
-
-
+                var retVal = _mapper.Map<Models.System.DTO.CustomerDTO>(DBItem);
 
                 return Ok(retVal);
             }
             catch (Exception exc)
             {
-                log.Error("Failed to get single Customer with ID : " + ID, exc);
-                return BadRequest("Failed to get single Customer : " + exc.Message);
+                log.Error("fail to get customer by id: " + CustomerID, exc);
+                return BadRequest("fail to get customer by id" + exc.Message);
             }
+
         }
+
+
 
         [HttpPost]
-        public ActionResult CreateCustomer([FromBody] Models.System.DTO.CustomerDTO requestDTO)
+        public ActionResult CreateCustomer([FromBody] Models.System.DTO.CustomerDTO requestDTO)       //FromBody means ((if youre using postman))
         {
             try
             {
-                var request = _mapper.Map<Models.System.Customer>(requestDTO);
+                var request = _mapper.Map<Models.System.Customer>(requestDTO);       //add[FromBody} and saveChanges
 
-
-
-                _context.Customers.Add(request);
+                _context.Customer.Add(request);
                 _context.SaveChanges();
-
-
 
                 if (request == null)
                 {
-                    return BadRequest("Failed to create Customer, database returned null");
+                    return BadRequest("Failed to create customer, database returned null");
                 }
-
-
 
                 return Ok(_mapper.Map<Models.System.DTO.CustomerDTO>(request));
             }
             catch (Exception exc)
             {
-                log.Error("Failed to create Customer.", exc);
-                return BadRequest("Failed to create Customer : " + exc.Message);
+                log.Error("Failed to return customer.", exc);
+                return BadRequest("Failed to return customer." + exc.Message);
             }
-
         }
+
+
 
         [HttpPut]
-        public ActionResult UpdateCustomer([FromBody] Models.System.Customer requestDTO)
+        public ActionResult UpdateCustomer([FromBody] Models.System.DTO.CustomerDTO requestDTO)
         {
             try
             {
                 var request = _mapper.Map<Models.System.Customer>(requestDTO);
+
                 _context.Update(request);
                 _context.SaveChanges();
+
                 if (request == null)
                 {
-                    return BadRequest("Failed to update the Customer : Database returned null");
+                    return BadRequest("Failed to update the AdminUser : Database returned null");
                 }
-
-
-
                 return Ok(_mapper.Map<Models.System.DTO.CustomerDTO>(request));
             }
             catch (Exception exc)
             {
-                log.Error("Failed to update the Customer", exc);
-                return BadRequest("Failed to update the Customer : " + exc.Message);
+                log.Error("fail to delete customer ", exc);
+                return BadRequest("fail to delete customer" + exc.Message);
             }
         }
 
+
+
         [HttpDelete]
-        public ActionResult DeleteCustomer(int customerID)
+
+        public ActionResult DeleteCustomer(int ID)
         {
             try
             {
-                var dbExists = _context.Customers.Find(customerID);
-                if (dbExists == null)
-                {
-                    return BadRequest(": " + customerID);
-                }
+                var dbItem = _context.Customer.Find(ID);
 
-                _context.Remove(dbExists);
+                var success = _context.Entry(dbItem).State = Microsoft.EntityFrameworkCore.EntityState.Deleted;
+
                 _context.SaveChanges();
 
                 return Ok();
             }
             catch (Exception exc)
             {
-                log.Error("Failed to delte customer", exc);
-                return BadRequest("Failed to delete customer" + exc.Message);
+                log.Error("Failed to delete Customer", exc);
+                return BadRequest("Failed to delete Customer. " + exc.Message);
             }
         }
-    }
-}
 
+    }
+
+}

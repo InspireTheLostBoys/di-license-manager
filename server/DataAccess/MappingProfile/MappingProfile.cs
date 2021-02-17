@@ -16,11 +16,11 @@ namespace DataAccess.MappingProfile
                 CreateMap<Models.System.AdminUser, Models.System.DTO.AdminUserDTO>();
                 CreateMap<Models.System.DTO.AdminUserDTO, Models.System.AdminUser>();
 
-                CreateMap<Models.System.EmailSetting, Models.System.DTO.EmailSettingsDTO>();
-                CreateMap<Models.System.DTO.EmailSettingsDTO, Models.System.EmailSetting>();
+                CreateMap<Models.System.EmailSettings, Models.System.DTO.EmailSettingsDTO>();
+                CreateMap<Models.System.DTO.EmailSettingsDTO, Models.System.EmailSettings>();
 
-                CreateMap<Models.System.CustomerRecipient, Models.System.DTO.CustomerRecipientDTO>();
-                CreateMap<Models.System.DTO.CustomerRecipientDTO, Models.System.CustomerRecipient>();
+                CreateMap<Models.System.Recipient, Models.System.DTO.RecipientDTO>();
+                CreateMap<Models.System.DTO.RecipientDTO, Models.System.Recipient>();
 
                 CreateMap<Models.System.License, Models.System.DTO.LicenseDTO>();
                 CreateMap<Models.System.DTO.LicenseDTO, Models.System.License>();
@@ -34,8 +34,12 @@ namespace DataAccess.MappingProfile
                 CreateMap<Models.System.Product, Models.System.DTO.ProductDTO>();
                 CreateMap<Models.System.DTO.ProductDTO, Models.System.Product>();
 
+<<<<<<< HEAD
 
             }
+=======
+        }
+>>>>>>> 1c41dc8900f93592ec367fd8b599d887e321c664
         }
     }
 

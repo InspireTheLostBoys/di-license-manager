@@ -22,3 +22,15 @@ C:\Work\GIT\di-license-manager\server\Models.System\obj\Debug\net5.0\Models.Syst
 C:\Work\GIT\di-license-manager\server\Models.System\obj\Debug\net5.0\Models.System.dll
 C:\Work\GIT\di-license-manager\server\Models.System\obj\Debug\net5.0\ref\Models.System.dll
 C:\Work\GIT\di-license-manager\server\Models.System\obj\Debug\net5.0\Models.System.pdb
+C:\work\di-license-manager\server\Models.System\obj\Debug\net5.0\Models.System.csprojAssemblyReference.cache
+C:\work\di-license-manager\server\Models.System\obj\Debug\net5.0\Models.System.GeneratedMSBuildEditorConfig.editorconfig
+C:\work\di-license-manager\server\Models.System\obj\Debug\net5.0\Models.System.AssemblyInfoInputs.cache
+C:\work\di-license-manager\server\Models.System\obj\Debug\net5.0\Models.System.AssemblyInfo.cs
+C:\work\di-license-manager\server\Models.System\obj\Debug\net5.0\Models.System.csproj.CoreCompileInputs.cache
+C:\work\di-license-manager\server\Models.System\obj\Debug\net5.0\Models.System.dll
+C:\work\di-license-manager\server\Models.System\obj\Debug\net5.0\ref\Models.System.dll
+C:\work\di-license-manager\server\Models.System\obj\Debug\net5.0\Models.System.pdb
+C:\work\di-license-manager\server\Models.System\bin\Debug\net5.0\Models.System.deps.json
+C:\work\di-license-manager\server\Models.System\bin\Debug\net5.0\Models.System.dll
+C:\work\di-license-manager\server\Models.System\bin\Debug\net5.0\ref\Models.System.dll
+C:\work\di-license-manager\server\Models.System\bin\Debug\net5.0\Models.System.pdb

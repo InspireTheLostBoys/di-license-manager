@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Models.System
 {
@@ -13,29 +9,37 @@ namespace Models.System
     {
         [Key]
         public int ID { get; set; }
+
         [Required]
         [MaxLength(150)]
-        public string Name { get; set; }
+        public string CustomerName { get; set; }
+
         [Required]
         [MaxLength(500)]
-        public string EmailAdress { get; set; }
+        public string EmailAddress { get; set; }
+
         [Required]
         [MaxLength(250)]
-        public string AdressLine1 { get; set; }
+        public string AddressLine1 { get; set; }
+
         [Required]
         [MaxLength(250)]
-        public string AdressLine2 { get; set; }
+        public string AddressLine2 { get; set; }
+
+
         [Required]
         [MaxLength(100)]
-        public int City { get; set; }
+        public string City { get; set; }
+
+
         [Required]
         [MaxLength(100)]
         public string ProvinceOrState { get; set; }
+
+
         [Required]
         [MaxLength(15)]
-        public string PostalCode { get; set; }
-
-        public DateTime DateTime { get; set; }
+        public int PostalCode { get; set; }
 
     }
 }

@@ -6001,19 +6001,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eb264\\.nuget\\packages\\": {}
+    "C:\\Users\\jason\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Work\\GIT\\di-license-manager\\server\\DILicenceManagerSerever\\DILicenceManagerSerever.csproj",
+      "projectUniqueName": "C:\\work\\di-license-manager\\server\\DILicenceManagerSerever\\DILicenceManagerSerever.csproj",
       "projectName": "DILicenceManagerSerever",
-      "projectPath": "C:\\Work\\GIT\\di-license-manager\\server\\DILicenceManagerSerever\\DILicenceManagerSerever.csproj",
-      "packagesPath": "C:\\Users\\eb264\\.nuget\\packages\\",
-      "outputPath": "C:\\Work\\GIT\\di-license-manager\\server\\DILicenceManagerSerever\\obj\\",
+      "projectPath": "C:\\work\\di-license-manager\\server\\DILicenceManagerSerever\\DILicenceManagerSerever.csproj",
+      "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
+      "outputPath": "C:\\work\\di-license-manager\\server\\DILicenceManagerSerever\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\eb264\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6027,11 +6027,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Work\\GIT\\di-license-manager\\server\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Work\\GIT\\di-license-manager\\server\\DataAccess\\DataAccess.csproj"
+            "C:\\work\\di-license-manager\\server\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\work\\di-license-manager\\server\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Work\\GIT\\di-license-manager\\server\\Models.System\\Models.System.csproj": {
-              "projectPath": "C:\\Work\\GIT\\di-license-manager\\server\\Models.System\\Models.System.csproj"
+            "C:\\work\\di-license-manager\\server\\Models.System\\Models.System.csproj": {
+              "projectPath": "C:\\work\\di-license-manager\\server\\Models.System\\Models.System.csproj"
             }
           }
         }
@@ -6131,7 +6131,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

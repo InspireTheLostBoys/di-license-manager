@@ -3,19 +3,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Models.System
 {
-    [Table("Product")]
-    public class Product
+    [Table("EmailSettings")]
+    public class EmailSettings
     {
+
         [Key]
         public int ID { get; set; }
 
-
-        [Required]
-        public string ProductName { get; set; }
-
-
-        [Required]
-        public string ProductSupplier { get; set; }
+        public int LicenseExpiresInXMonths { get; set; }
 
     }
 }
