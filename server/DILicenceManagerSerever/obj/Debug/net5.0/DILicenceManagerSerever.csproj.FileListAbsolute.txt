@@ -1,0 +1,144 @@
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\log4net.config
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\appsettings.json
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\DILicenceManagerSerever.exe
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\DILicenceManagerSerever.deps.json
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\DILicenceManagerSerever.runtimeconfig.json
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\DILicenceManagerSerever.runtimeconfig.dev.json
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\DILicenceManagerSerever.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\ref\DILicenceManagerSerever.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\DILicenceManagerSerever.pdb
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Dapper.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Humanizer.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\log4net.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\DataAccess.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Models.System.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\bin\Debug\net5.0\Models.System.pdb
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.csprojAssemblyReference.cache
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.AssemblyInfoInputs.cache
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.AssemblyInfo.cs
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.csproj.CoreCompileInputs.cache
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\obj\Debug\net5.0\staticwebassets\DILicenceManagerSerever.StaticWebAssets.Manifest.cache
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\obj\Debug\net5.0\staticwebassets\DILicenceManagerSerever.StaticWebAssets.xml
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\obj\Debug\net5.0\scopedcss\bundle\DILicenceManagerSerever.styles.css
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.RazorTargetAssemblyInfo.cache
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.csproj.CopyComplete
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\obj\Debug\net5.0\ref\DILicenceManagerSerever.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.pdb
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.genruntimeconfig.cache
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\log4net.config
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\appsettings.Development.json
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\appsettings.json
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\DILicenceManagerSerever.exe
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\DILicenceManagerSerever.deps.json
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\DILicenceManagerSerever.runtimeconfig.json
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\DILicenceManagerSerever.runtimeconfig.dev.json
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\DILicenceManagerSerever.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\ref\DILicenceManagerSerever.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\DILicenceManagerSerever.pdb
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\AutoMapper.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Dapper.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Humanizer.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\log4net.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\DataAccess.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Models.System.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\DataAccess.pdb
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\bin\Debug\net5.0\Models.System.pdb
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.csprojAssemblyReference.cache
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.AssemblyInfoInputs.cache
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.AssemblyInfo.cs
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.csproj.CoreCompileInputs.cache
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.MvcApplicationPartsAssemblyInfo.cs
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.MvcApplicationPartsAssemblyInfo.cache
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\obj\Debug\net5.0\staticwebassets\DILicenceManagerSerever.StaticWebAssets.Manifest.cache
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\obj\Debug\net5.0\staticwebassets\DILicenceManagerSerever.StaticWebAssets.xml
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\obj\Debug\net5.0\scopedcss\bundle\DILicenceManagerSerever.styles.css
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.RazorTargetAssemblyInfo.cache
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.csproj.CopyComplete
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\obj\Debug\net5.0\ref\DILicenceManagerSerever.dll
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.pdb
+C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever\obj\Debug\net5.0\DILicenceManagerSerever.genruntimeconfig.cache

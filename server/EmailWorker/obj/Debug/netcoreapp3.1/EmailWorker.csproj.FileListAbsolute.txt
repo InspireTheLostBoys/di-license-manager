@@ -1,0 +1,9 @@
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\EmailWorker\bin\Debug\netcoreapp3.1\EmailWorker.deps.json
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\EmailWorker\bin\Debug\netcoreapp3.1\EmailWorker.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\EmailWorker\bin\Debug\netcoreapp3.1\EmailWorker.pdb
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\EmailWorker\obj\Debug\netcoreapp3.1\EmailWorker.csprojAssemblyReference.cache
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\EmailWorker\obj\Debug\netcoreapp3.1\EmailWorker.AssemblyInfoInputs.cache
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\EmailWorker\obj\Debug\netcoreapp3.1\EmailWorker.AssemblyInfo.cs
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\EmailWorker\obj\Debug\netcoreapp3.1\EmailWorker.csproj.CoreCompileInputs.cache
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\EmailWorker\obj\Debug\netcoreapp3.1\EmailWorker.dll
+C:\Users\eb264\OneDrive\Documents\Work\Licence test\EmailWorker\obj\Debug\netcoreapp3.1\EmailWorker.pdb
