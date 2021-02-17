@@ -22,3 +22,15 @@ C:\Work\GIT\di-license-manager\server\Email\obj\Debug\net5.0\Email.csproj.CoreCo
 C:\Work\GIT\di-license-manager\server\Email\obj\Debug\net5.0\Email.dll
 C:\Work\GIT\di-license-manager\server\Email\obj\Debug\net5.0\ref\Email.dll
 C:\Work\GIT\di-license-manager\server\Email\obj\Debug\net5.0\Email.pdb
+C:\work\di-license-manager\server\Email\bin\Debug\net5.0\Email.deps.json
+C:\work\di-license-manager\server\Email\bin\Debug\net5.0\Email.dll
+C:\work\di-license-manager\server\Email\bin\Debug\net5.0\ref\Email.dll
+C:\work\di-license-manager\server\Email\bin\Debug\net5.0\Email.pdb
+C:\work\di-license-manager\server\Email\obj\Debug\net5.0\Email.csprojAssemblyReference.cache
+C:\work\di-license-manager\server\Email\obj\Debug\net5.0\Email.GeneratedMSBuildEditorConfig.editorconfig
+C:\work\di-license-manager\server\Email\obj\Debug\net5.0\Email.AssemblyInfoInputs.cache
+C:\work\di-license-manager\server\Email\obj\Debug\net5.0\Email.AssemblyInfo.cs
+C:\work\di-license-manager\server\Email\obj\Debug\net5.0\Email.csproj.CoreCompileInputs.cache
+C:\work\di-license-manager\server\Email\obj\Debug\net5.0\Email.dll
+C:\work\di-license-manager\server\Email\obj\Debug\net5.0\ref\Email.dll
+C:\work\di-license-manager\server\Email\obj\Debug\net5.0\Email.pdb

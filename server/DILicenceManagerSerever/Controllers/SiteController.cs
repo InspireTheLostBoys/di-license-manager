@@ -28,13 +28,13 @@ namespace DILicenceManagerSerever.Controllers
         {
             try
             {
-                List<Models.System.Site> dbList = _context.Sites.ToList();
+                List<Models.System.Site> dbList = _context.Site.ToList();
                 return Ok(dbList);
             }
             catch (Exception exc)
             {
-                log.Error("Failed to get all Sites", exc);
-                return BadRequest("Failed to get all Sites : " + exc.Message);
+                log.Error("Failed to get all Site", exc);
+                return BadRequest("Failed to get all Site : " + exc.Message);
             }
 
 
@@ -45,7 +45,7 @@ namespace DILicenceManagerSerever.Controllers
         {
             try
             {
-                var dbItem = _context.Sites.Find(ID);
+                var dbItem = _context.Site.Find(ID);
                 if (dbItem == null)
                 {
                     return BadRequest("There is no Site found by that id: " + ID);
@@ -72,7 +72,7 @@ namespace DILicenceManagerSerever.Controllers
             try
             {
                 var request = _mapper.Map<Models.System.Site>(requestDTO);
-                _context.Sites.Add(request);
+                _context.Site.Add(request);
                 _context.SaveChanges();
 
 
@@ -122,7 +122,7 @@ namespace DILicenceManagerSerever.Controllers
         {
             try
             {
-                var dbExists = _context.Sites.Find(SiteID);
+                var dbExists = _context.Site.Find(SiteID);
                 if (dbExists == null)
                 {
                     return BadRequest(": " + SiteID);

@@ -28,7 +28,7 @@ namespace DILicenceManagerSerever.Controllers
             Models.System.DTO.BaseResponse.BaseResponseDTO retval = new Models.System.DTO.BaseResponse.BaseResponseDTO();
             try
             {
-                var user = _context.AdminUsers.Where(m => m.EmailAddress == username && m.Password ==
+                var user = _context.AdminUser.Where(m => m.EmailAddress == username && m.Password ==
                 password).FirstOrDefault();
                 
                 if (user == null)

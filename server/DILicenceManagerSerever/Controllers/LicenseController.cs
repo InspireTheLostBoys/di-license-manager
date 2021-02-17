@@ -29,13 +29,13 @@ namespace DILicenceManagerSerever.Controllers
         {
             try
             {
-                List<Models.System.License> dbList = _context.Licenses.ToList();
+                List<Models.System.License> dbList = _context.License.ToList();
                 return Ok(dbList);
             }
             catch (Exception exc)
             {
-                log.Error("Failed to get all Licenses", exc);
-                return BadRequest("Failed to get all Licenses : " + exc.Message);
+                log.Error("Failed to get all License", exc);
+                return BadRequest("Failed to get all License : " + exc.Message);
             }
 
 
@@ -46,7 +46,7 @@ namespace DILicenceManagerSerever.Controllers
         {
             try
             {
-                var dbItem = _context.Licenses.Find(ID);
+                var dbItem = _context.License.Find(ID);
                 if (dbItem == null)
                 {
                     return BadRequest("There is no License found by that id: " + ID);
@@ -76,7 +76,7 @@ namespace DILicenceManagerSerever.Controllers
 
 
 
-                _context.Licenses.Add(request);
+                _context.License.Add(request);
                 _context.SaveChanges();
 
 
@@ -126,7 +126,7 @@ namespace DILicenceManagerSerever.Controllers
         {
             try
             {
-                var dbExists = _context.Licenses.Find(LicenseID);
+                var dbExists = _context.License.Find(LicenseID);
                 if (dbExists == null)
                 {
                     return BadRequest(": " + LicenseID);

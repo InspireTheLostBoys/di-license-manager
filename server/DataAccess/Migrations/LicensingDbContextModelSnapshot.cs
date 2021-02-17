@@ -27,21 +27,20 @@ namespace DataAccess.Migrations
                         .UseIdentityColumn();
 
                     b.Property<bool>("Active")
-                        .HasMaxLength(100)
                         .HasColumnType("bit");
-
-                    b.Property<DateTime?>("DateTime")
-                        .HasColumnType("datetime2");
 
                     b.Property<string>("EmailAddress")
                         .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasMaxLength(150)
                         .HasColumnType("nvarchar(150)");
+
+                    b.Property<DateTime?>("LastLoggedInDateTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("LastName")
                         .IsRequired()
@@ -50,29 +49,23 @@ namespace DataAccess.Migrations
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("ID");
 
                     b.ToTable("AdminUser");
-                });
 
-            modelBuilder.Entity("Models.System.Car", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("Car");
+                    b.HasData(
+                        new
+                        {
+                            ID = 1,
+                            Active = true,
+                            EmailAddress = "lana@devinspire.com",
+                            FirstName = "Admin User",
+                            LastName = "Admin User",
+                            Password = "Pass@123"
+                        });
                 });
 
             modelBuilder.Entity("Models.System.Customer", b =>
@@ -82,37 +75,34 @@ namespace DataAccess.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("AdressLine1")
+                    b.Property<string>("AddressLine1")
                         .IsRequired()
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<string>("AdressLine2")
+                    b.Property<string>("AddressLine2")
                         .IsRequired()
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<int>("City")
+                    b.Property<string>("City")
+                        .IsRequired()
                         .HasMaxLength(100)
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(100)");
 
-                    b.Property<DateTime>("DateTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("EmailAdress")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<string>("Name")
+                    b.Property<string>("CustomerName")
                         .IsRequired()
                         .HasMaxLength(150)
                         .HasColumnType("nvarchar(150)");
 
-                    b.Property<string>("PostalCode")
+                    b.Property<string>("EmailAddress")
                         .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int>("PostalCode")
                         .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)");
+                        .HasColumnType("int");
 
                     b.Property<string>("ProvinceOrState")
                         .IsRequired()
@@ -124,29 +114,6 @@ namespace DataAccess.Migrations
                     b.ToTable("Customer");
                 });
 
-            modelBuilder.Entity("Models.System.CustomerRecipient", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<int>("CustomerId")
-                        .HasMaxLength(150)
-                        .HasColumnType("int");
-
-                    b.Property<string>("SiteName")
-                        .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CustomerId");
-
-                    b.ToTable("CustomerRecipient");
-                });
-
             modelBuilder.Entity("Models.System.EmailSetting", b =>
                 {
                     b.Property<int>("ID")
@@ -154,7 +121,7 @@ namespace DataAccess.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<int>("EveryXMonths")
+                    b.Property<int>("LicenseExpiresInXMonths")
                         .HasColumnType("int");
 
                     b.HasKey("ID");
@@ -169,63 +136,76 @@ namespace DataAccess.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("CustomerName")
-                        .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
-
-                    b.Property<DateTime>("DateTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("ProductId")
-                        .HasMaxLength(150)
+                    b.Property<int>("AdminUserID")
                         .HasColumnType("int");
 
-                    b.Property<int>("SiteId")
-                        .HasMaxLength(150)
+                    b.Property<DateTime>("ExpiryDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Notes")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ProductID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SiteID")
                         .HasColumnType("int");
 
                     b.HasKey("ID");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex("AdminUserID");
 
-                    b.HasIndex("SiteId");
+                    b.HasIndex("ProductID");
+
+                    b.HasIndex("SiteID");
 
                     b.ToTable("License");
                 });
 
             modelBuilder.Entity("Models.System.Product", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<DateTime>("DateTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("ProductDescription")
-                        .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
-
-                    b.Property<int>("ProductId")
-                        .HasMaxLength(150)
-                        .HasColumnType("int");
-
                     b.Property<string>("ProductName")
                         .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Supplier")
+                    b.Property<string>("ProductSupplier")
                         .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("ID");
 
                     b.ToTable("Product");
+                });
+
+            modelBuilder.Entity("Models.System.Recipient", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("EmailAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RecipientName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SiteID")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("SiteID");
+
+                    b.ToTable("Recipient");
                 });
 
             modelBuilder.Entity("Models.System.Site", b =>
@@ -248,32 +228,40 @@ namespace DataAccess.Migrations
                     b.ToTable("Sites");
                 });
 
-            modelBuilder.Entity("Models.System.CustomerRecipient", b =>
+            modelBuilder.Entity("Models.System.License", b =>
                 {
-                    b.HasOne("Models.System.Customer", "Customer")
+                    b.HasOne("Models.System.AdminUser", "AdminUser")
                         .WithMany()
-                        .HasForeignKey("CustomerId")
+                        .HasForeignKey("AdminUserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Customer");
-                });
-
-            modelBuilder.Entity("Models.System.License", b =>
-                {
                     b.HasOne("Models.System.Product", "Product")
                         .WithMany()
-                        .HasForeignKey("ProductId")
+                        .HasForeignKey("ProductID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Models.System.Site", "Site")
                         .WithMany()
-                        .HasForeignKey("SiteId")
+                        .HasForeignKey("SiteID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("AdminUser");
+
                     b.Navigation("Product");
+
+                    b.Navigation("Site");
+                });
+
+            modelBuilder.Entity("Models.System.Recipient", b =>
+                {
+                    b.HasOne("Models.System.Site", "Site")
+                        .WithMany()
+                        .HasForeignKey("SiteID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Site");
                 });

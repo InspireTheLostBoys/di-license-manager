@@ -22,3 +22,15 @@ C:\Work\GIT\di-license-manager\server\EmailWorker\obj\Debug\net5.0\EmailWorker.c
 C:\Work\GIT\di-license-manager\server\EmailWorker\obj\Debug\net5.0\EmailWorker.dll
 C:\Work\GIT\di-license-manager\server\EmailWorker\obj\Debug\net5.0\ref\EmailWorker.dll
 C:\Work\GIT\di-license-manager\server\EmailWorker\obj\Debug\net5.0\EmailWorker.pdb
+C:\work\di-license-manager\server\EmailWorker\bin\Debug\net5.0\EmailWorker.deps.json
+C:\work\di-license-manager\server\EmailWorker\bin\Debug\net5.0\EmailWorker.dll
+C:\work\di-license-manager\server\EmailWorker\bin\Debug\net5.0\ref\EmailWorker.dll
+C:\work\di-license-manager\server\EmailWorker\bin\Debug\net5.0\EmailWorker.pdb
+C:\work\di-license-manager\server\EmailWorker\obj\Debug\net5.0\EmailWorker.csprojAssemblyReference.cache
+C:\work\di-license-manager\server\EmailWorker\obj\Debug\net5.0\EmailWorker.GeneratedMSBuildEditorConfig.editorconfig
+C:\work\di-license-manager\server\EmailWorker\obj\Debug\net5.0\EmailWorker.AssemblyInfoInputs.cache
+C:\work\di-license-manager\server\EmailWorker\obj\Debug\net5.0\EmailWorker.AssemblyInfo.cs
+C:\work\di-license-manager\server\EmailWorker\obj\Debug\net5.0\EmailWorker.csproj.CoreCompileInputs.cache
+C:\work\di-license-manager\server\EmailWorker\obj\Debug\net5.0\EmailWorker.dll
+C:\work\di-license-manager\server\EmailWorker\obj\Debug\net5.0\ref\EmailWorker.dll
+C:\work\di-license-manager\server\EmailWorker\obj\Debug\net5.0\EmailWorker.pdb

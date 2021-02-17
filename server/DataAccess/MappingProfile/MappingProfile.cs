@@ -34,9 +34,6 @@ namespace DataAccess.MappingProfile
                 CreateMap<Models.System.Product, Models.System.DTO.ProductDTO>();
                 CreateMap<Models.System.DTO.ProductDTO, Models.System.Product>();
 
-                CreateMap<Models.System.Car, Models.System.DTO.CarDTO>();
-                CreateMap<Models.System.DTO.CarDTO, Models.System.Car>();
-
         }
         }
     }

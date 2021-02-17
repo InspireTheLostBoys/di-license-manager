@@ -29,7 +29,7 @@ namespace DILicenceManagerSerever.Controllers
         {
             try
             {
-                List<Models.System.Recipient> dbList = _context.CustomerRecipients.ToList();
+                List<Models.System.Recipient> dbList = _context.Recipient.ToList();
                 return Ok(dbList);
             }
             catch (Exception exc)
@@ -46,7 +46,7 @@ namespace DILicenceManagerSerever.Controllers
         {
             try
             {
-                var dbItem = _context.CustomerRecipients.Find(ID);
+                var dbItem = _context.Recipient.Find(ID);
                 if (dbItem == null)
                 {
                     return BadRequest("There is no CustomerRecipient found by that id: " + ID);
@@ -76,7 +76,7 @@ namespace DILicenceManagerSerever.Controllers
 
 
 
-                _context.CustomerRecipients.Add(request);
+                _context.Recipient.Add(request);
                 _context.SaveChanges();
 
 
@@ -126,7 +126,7 @@ namespace DILicenceManagerSerever.Controllers
         {
             try
             {
-                var dbExists = _context.CustomerRecipients.Find(CustomerRecipientID);
+                var dbExists = _context.Recipient.Find(CustomerRecipientID);
                 if (dbExists == null)
                 {
                     return BadRequest(": " + CustomerRecipientID);

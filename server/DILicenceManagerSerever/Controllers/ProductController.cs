@@ -30,13 +30,13 @@ namespace DILicenceManagerSerever.Controllers
         {
             try
             {
-                List<Models.System.Product> dbList = _context.Products.ToList();
+                List<Models.System.Product> dbList = _context.Product.ToList();
                 return Ok(dbList);
             }
             catch (Exception exc)
             {
-                log.Error("Failed to get all Products", exc);
-                return BadRequest("Failed to get all Products : " + exc.Message);
+                log.Error("Failed to get all Product", exc);
+                return BadRequest("Failed to get all Product : " + exc.Message);
             }
 
 
@@ -47,7 +47,7 @@ namespace DILicenceManagerSerever.Controllers
         {
             try
             {
-                var dbItem = _context.Products.Find(ID);
+                var dbItem = _context.Product.Find(ID);
                 if (dbItem == null)
                 {
                     return BadRequest("There is no Product found by that id: " + ID);
@@ -77,7 +77,7 @@ namespace DILicenceManagerSerever.Controllers
 
 
 
-                _context.Products.Add(request);
+                _context.Product.Add(request);
                 _context.SaveChanges();
 
 
@@ -127,7 +127,7 @@ namespace DILicenceManagerSerever.Controllers
         {
             try
             {
-                var dbExists = _context.Products.Find(ProductID);
+                var dbExists = _context.Product.Find(ProductID);
                 if (dbExists == null)
                 {
                     return BadRequest(": " + ProductID);

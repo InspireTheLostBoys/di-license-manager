@@ -32,13 +32,13 @@ namespace DILicenceManagerSerever.Controllers
         {
             try
             {
-                var dbList = _context.AdminUsers.ToList();
+                var dbList = _context.AdminUser.ToList();
                 return Ok(dbList); // 200 ok status code, with the result from the database
             }
             catch (Exception exc)
             {
-                log.Error("Failed to get all AdminUsers", exc);
-                return BadRequest("Failed to get all AdminUsers : " + exc.Message);
+                log.Error("Failed to get all AdminUser", exc);
+                return BadRequest("Failed to get all AdminUser : " + exc.Message);
             }
         }
 
@@ -49,7 +49,7 @@ namespace DILicenceManagerSerever.Controllers
         {
             try
             {
-                var dbItem = _context.AdminUsers.Find(ID);
+                var dbItem = _context.AdminUser.Find(ID);
                 if (dbItem == null)
                 {
                     return BadRequest("There is no AdminUser found by that id: " + ID);
@@ -81,7 +81,7 @@ namespace DILicenceManagerSerever.Controllers
 
 
 
-                _context.AdminUsers.Add(request);
+                _context.AdminUser.Add(request);
                 _context.SaveChanges();
 
 
@@ -135,7 +135,7 @@ namespace DILicenceManagerSerever.Controllers
         {
             try
             {
-                var dbExists = _context.AdminUsers.Find(AdminUserID);
+                var dbExists = _context.AdminUser.Find(AdminUserID);
                 if (dbExists == null)
                 {
                     return BadRequest("Failed to find AdminUser with the given id for delete : " + AdminUserID);
