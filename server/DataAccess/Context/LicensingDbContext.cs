@@ -21,7 +21,7 @@ namespace DataAccess.Context
         public DbSet<Models.System.EmailSetting>EmailSettings { get; set; }
         public DbSet<Models.System.Site>Sites { get; set; }
         public DbSet<Models.System.CustomerRecipient>CustomerRecipients { get; set; }
-        public DbSet<Models.System.Car> Cars { get; set; }
+        
 
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{

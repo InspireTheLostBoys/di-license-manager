@@ -1219,3 +1219,6 @@ City
    --- End of inner exception stack trace ---
    at lambda_method43(Closure , Object , Customer , ResolutionContext )
    at DILicenceManagerSerever.Controllers.CustomerController.CreateCustomer(CustomerDTO requestDTO) in C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\Controllers\CustomerController.cs:line 75
+2021-02-17 12:51:34,644 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-17 12:51:34,721 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-17 12:51:34,741 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever
