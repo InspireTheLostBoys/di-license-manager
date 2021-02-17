@@ -15,7 +15,6 @@
 import { CustomerCrud } from "../../libs/customer";
 
 export default {
-  name: "customers-list",
   data() {
     return {
       crudManager: new CustomerCrud(this),
