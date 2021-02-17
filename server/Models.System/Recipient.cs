@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Models.System
 {
@@ -23,6 +18,9 @@ namespace Models.System
         [Required]
         public string EmailAddress { get; set; }
 
+
+        //this sets the link to sites. the recipient neesd a site.
         public virtual Site Site { get; set; }
+
     }
 }

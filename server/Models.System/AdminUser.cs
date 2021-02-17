@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text;
 
 namespace Models.System
 {
@@ -36,7 +38,6 @@ namespace Models.System
 
 
         public DateTime? LastLoggedInDateTime { get; set; }         // the ? means not required 
-
 
     }
 }
