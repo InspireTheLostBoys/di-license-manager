@@ -262,3 +262,7 @@ __pycache__/
 
 VueShell_login_vuetfiy_home/dist/
 Ads/
+*.pdb
+*.cs
+*.config
+*.cache

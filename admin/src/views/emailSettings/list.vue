@@ -1,6 +1,6 @@
 <template>
   <v-container>
-  <h2>Email Settings: </h2>
+    <h2>Email Settings:</h2>
     <v-btn @click="crudManager.onAdd()">Add</v-btn>
     <v-data-table :headers="headers" :items="crudManager.list">
       <template v-slot:item.actions="{ item }">
@@ -8,6 +8,7 @@
         <v-btn text @click="deleteItem(item)">delete</v-btn>
       </template>
     </v-data-table>
+    <v-btn class="primary" @click="$router.push('/')">Back</v-btn>
   </v-container>
 </template>
 
@@ -21,25 +22,27 @@ export default {
       headers: [
         {
           text: "License Expires In X Months",
+          align: "center",
           value: "licenseExpiresInXMonths",
         },
         {
           text: "",
           value: "actions",
+          align: "end",
         },
       ],
     };
   },
   created() {
-      console.log(this.crudManager)
+    console.log(this.crudManager);
   },
   methods: {
-      editItem(item) {
-          this.crudManager.onEdit(item);
-      },
-      deleteItem(item) {
-          this.crudManager.delete(item);
-      }
-  }
+    editItem(item) {
+      this.crudManager.onEdit(item);
+    },
+    deleteItem(item) {
+      this.crudManager.delete(item);
+    },
+  },
 };
 </script>

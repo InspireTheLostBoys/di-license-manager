@@ -1,13 +1,14 @@
 <template>
   <v-container>
   <h2>Sites:</h2>
-    <v-btn @click="crudManager.onAdd()">Add</v-btn>
+    <v-btn disabled @click="crudManager.onAdd()">Add</v-btn>
     <v-data-table :headers="headers" :items="crudManager.list">
-      <template v-slot:item.actions="{ item }">
-        <v-btn @click="editItem(item)">edit</v-btn>
-        <v-btn @click="deleteItem(item)">delete</v-btn>
-      </template>
+       <template v-slot:item.actions="{ item }">
+        <v-btn disabled text @click="editItem(item)">edit</v-btn>
+        <v-btn disabled text @click="deleteItem(item)">delete</v-btn>
+      </template> 
     </v-data-table>
+    <v-btn class="primary" @click="$router.push('/')">Back</v-btn>
   </v-container>
 </template>
 
@@ -30,6 +31,7 @@ export default {
         {
           text: "",
           value: "actions",
+          align: "end"
         },
       ],
     };

@@ -8,6 +8,7 @@
         <v-btn text @click="deleteItem(item)">delete</v-btn>
       </template>
     </v-data-table>
+    <v-btn class="primary" @click="$router.push('/')">Back</v-btn>
   </v-container>
 </template>
 
