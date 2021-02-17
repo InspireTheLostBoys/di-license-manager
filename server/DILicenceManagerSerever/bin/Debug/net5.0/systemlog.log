@@ -1219,6 +1219,11 @@ City
    --- End of inner exception stack trace ---
    at lambda_method43(Closure , Object , Customer , ResolutionContext )
    at DILicenceManagerSerever.Controllers.CustomerController.CreateCustomer(CustomerDTO requestDTO) in C:\Users\eb264\OneDrive\Documents\Work\Licence test\DILicenceManagerSerever\Controllers\CustomerController.cs:line 75
+<<<<<<< HEAD
+2021-02-17 12:51:34,644 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-17 12:51:34,721 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-17 12:51:34,741 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever
+=======
 2021-02-17 11:07:23,928 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
 2021-02-17 11:07:23,994 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
 2021-02-17 11:07:24,034 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\work\di-license-manager\server\DILicenceManagerSerever
@@ -1547,3 +1552,4 @@ Error Number:547,State:0,Class:16
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
    at DILicenseManagerServer.Controllers.SiteController.CreateSite(SiteDTO requestDTO) in C:\work\di-license-manager\server\DILicenceManagerSerever\Controllers\SiteController.cs:line 101
+>>>>>>> 1c41dc8900f93592ec367fd8b599d887e321c664

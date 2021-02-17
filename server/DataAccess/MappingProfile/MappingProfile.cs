@@ -34,7 +34,12 @@ namespace DataAccess.MappingProfile
                 CreateMap<Models.System.Product, Models.System.DTO.ProductDTO>();
                 CreateMap<Models.System.DTO.ProductDTO, Models.System.Product>();
 
+<<<<<<< HEAD
+
+            }
+=======
         }
+>>>>>>> 1c41dc8900f93592ec367fd8b599d887e321c664
         }
     }
 
