@@ -5,9 +5,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 
-namespace DILicenceManagerSerever.Controllers
+namespace DIAdminUserManagerServer.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -16,8 +15,6 @@ namespace DILicenceManagerSerever.Controllers
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         private readonly DataAccess.Context.LicensingDbContext _context;
         private readonly IMapper _mapper;
-
-
 
         public AdminUserController(DataAccess.Context.LicensingDbContext context, IMapper mapper)
         {
@@ -33,39 +30,36 @@ namespace DILicenceManagerSerever.Controllers
             try
             {
                 var dbList = _context.AdminUser.ToList();
-                return Ok(dbList); // 200 ok status code, with the result from the database
+                return Ok(_mapper.Map<List<Models.System.DTO.AdminUserDTO>>(dbList)); // 200 ok status code, with the result from the database
             }
             catch (Exception exc)
             {
-                log.Error("Failed to get all AdminUser", exc);
-                return BadRequest("Failed to get all AdminUser : " + exc.Message);
+                log.Error("Failed to get all AdminUsers", exc);
+                return BadRequest("Failed to get all AdminUsers : " + exc.Message);
             }
         }
 
 
 
-        [HttpGet("/{ID:int}")]
-        public ActionResult GetSingleAdminUser(int ID)
+        [HttpGet]
+        [Route("Single")]
+        public ActionResult GetSingleAdminUser(int AdminUserID)
         {
             try
             {
-                var dbItem = _context.AdminUser.Find(ID);
+                var dbItem = _context.AdminUser.Find(AdminUserID);
                 if (dbItem == null)
                 {
-                    return BadRequest("There is no AdminUser found by that id: " + ID);
+                    return BadRequest("There is no AdminUser found by that id: " + AdminUserID);
                 }
 
-
-
                 var retVal = _mapper.Map<Models.System.DTO.AdminUserDTO>(dbItem);
-
-
 
                 return Ok(retVal);
             }
             catch (Exception exc)
             {
-                log.Error("Failed to get single AdminUser with ID : " + ID, exc);
+                log.Error("Failed to get single AdminUser with ID : " + AdminUserID, exc);
                 return BadRequest("Failed to get single AdminUser : " + exc.Message);
             }
         }
@@ -73,25 +67,19 @@ namespace DILicenceManagerSerever.Controllers
 
 
         [HttpPost]
-        public ActionResult CreateCustomer([FromBody] Models.System.DTO.AdminUserDTO requestDTO)
+        public ActionResult CreateAdminUser([FromBody] Models.System.DTO.AdminUserDTO requestDTO)
         {
             try
             {
                 var request = _mapper.Map<Models.System.AdminUser>(requestDTO);
 
-
-
                 _context.AdminUser.Add(request);
                 _context.SaveChanges();
-
-
 
                 if (request == null)
                 {
                     return BadRequest("Failed to create AdminUser, database returned null");
                 }
-
-
 
                 return Ok(_mapper.Map<Models.System.DTO.AdminUserDTO>(request));
             }
@@ -99,7 +87,7 @@ namespace DILicenceManagerSerever.Controllers
             {
                 log.Error("Failed to create AdminUser.", exc);
                 return BadRequest("Failed to create AdminUser : " + exc.Message);
-           }
+            }
         }
 
 
@@ -117,8 +105,6 @@ namespace DILicenceManagerSerever.Controllers
                     return BadRequest("Failed to update the AdminUser : Database returned null");
                 }
 
-
-
                 return Ok(_mapper.Map<Models.System.DTO.AdminUserDTO>(request));
             }
             catch (Exception exc)
@@ -131,22 +117,38 @@ namespace DILicenceManagerSerever.Controllers
 
 
         [HttpDelete]
-        public ActionResult DeleteAdminUser(int AdminUserID)
+        //public ActionResult DeleteAdminUser(int AdminUserID)
+        //{
+        //    try
+        //    {
+        //        var dbExists = _context.AdminUser.Find(AdminUserID);
+        //        if (dbExists == null)
+        //        {
+        //            return BadRequest("Failed to find AdminUser with the given id : " + AdminUserID);
+        //        }
+
+        //        _context.Remove(dbExists);
+        //        _context.SaveChanges();
+
+        //        return Ok();
+        //    }
+        //    catch (Exception exc)
+        //    {
+        //        log.Error("Failed to delete AdminUser", exc);
+        //        return BadRequest("Failed to delete AdminUser : " + exc.Message);
+        //    }
+        //}
+
+
+        public ActionResult DeleteAdminUser(int ID)
         {
             try
             {
-                var dbExists = _context.AdminUser.Find(AdminUserID);
-                if (dbExists == null)
-                {
-                    return BadRequest("Failed to find AdminUser with the given id for delete : " + AdminUserID);
-                }
+                var dbItem = _context.AdminUser.Find(ID);
 
+                var success = _context.Entry(dbItem).State = Microsoft.EntityFrameworkCore.EntityState.Deleted;
 
-
-                _context.Remove(dbExists);
                 _context.SaveChanges();
-
-
 
                 return Ok();
             }
@@ -157,4 +159,6 @@ namespace DILicenceManagerSerever.Controllers
             }
         }
     }
+
+
 }

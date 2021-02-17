@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Models.System
 {
     [Table("EmailSettings")]
-    public class EmailSetting
+    public class EmailSettings
     {
         [Key]
         public int ID { get; set; }

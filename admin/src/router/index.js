@@ -16,12 +16,6 @@ import noe_product from '../views/license-wizard/noe-product.vue'
 import product_select from '../views/product/select.vue'
 
 
-
-import CarList from '../views/car/list.vue'
-import CarAdd from '../views/car/add.vue'
-import CarEdit from '../views/car/edit.vue'
-
-
 import AdminUserList from '../views/adminUser/list'
 import AdminUserAdd from '../views/adminUser/add.vue'
 import AdminUserEdit from '../views/adminUser/edit.vue'
@@ -102,24 +96,6 @@ const routes = [
   },
 
 ////////////////////////////////////////
-
-  {
-    path: '/car',
-    name: 'cars-list',
-    component: CarList
-  },
-  {
-    path: '/car/add',
-    name: 'cars-add',
-    component: CarAdd
-  },
-  {
-    path: '/car/edit/:id',
-    name: 'cars-edit',
-    component: CarEdit
-  },
-
-  /////////////////////////////////
 
   {
     path: '/adminUser',

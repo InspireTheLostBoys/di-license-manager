@@ -18,7 +18,7 @@ namespace DataAccess.Context
         public DbSet<Models.System.Customer> Customer { get; set; }
         public DbSet<Models.System.License> License { get; set; }
         public DbSet<Models.System.Product> Product { get; set; }
-        public DbSet<Models.System.EmailSetting> EmailSettings { get; set; }
+        public DbSet<Models.System.EmailSettings> EmailSettings { get; set; }
         public DbSet<Models.System.Site> Site { get; set; }
         public DbSet<Models.System.Recipient> Recipient { get; set; }
 

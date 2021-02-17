@@ -1,5 +1,6 @@
 ﻿//using Dapper;
 //using Microsoft.Data.SqlClient;
+//using Models.System.DTO.Query;
 //using SendGrid;
 //using SendGrid.Helpers.Mail;
 //using System;
@@ -60,46 +61,46 @@
 //                }
 //            }
 //        }
-    
 
 
 
 
-//            public async Task<bool> SendEmail(List<Models.System.AdminUser> lsPeopleToSendTo, List<Models.System.DTO.LicenseDTO> lsLicences)
+
+//        public async Task<bool> SendEmail(List<Models.System.AdminUser> lsPeopleToSendTo, List<Models.System.DTO.LicenseDTO> lsLicences)
+//        {
+//            string apiKey = "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";
+//            string templateID = "d-8b90f39bf2054422b3c94935f1eabc6a";
+//            var client = new SendGridClient(apiKey);
+//            var from = new EmailAddress("licensing@devinspire.co.za", "Licensing Server Notifier");
+
+
+
+//            List<EmailAddress> recipients = new List<EmailAddress>();
+
+
+
+//            foreach (var person in lsPeopleToSendTo)
 //            {
-//                string apiKey = "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";
-//                string templateID = "d-8b90f39bf2054422b3c94935f1eabc6a";
-//                var client = new SendGridClient(apiKey);
-//                var from = new EmailAddress("licensing@devinspire.co.za", "Licensing Server Notifier");
+//                recipients.Add(new EmailAddress(person.EmailAddress));
+//            }
 
 
 
-//                List<EmailAddress> recipients = new List<EmailAddress>();
+//            // POPULATE DATA
 
 
 
-//                foreach (var person in lsPeopleToSendTo)
-//                {
-//                    recipients.Add(new EmailAddress(person.EmailAddress));
-//                }
+//            EmailData_Renewals data = new EmailData_Renewals();
+//            data.user_full_name = "X";
+//            data.renewal_list = new List<Email_Data_Renewal_Customer>();
 
 
 
-//                // POPULATE DATA
+//            DateTime dt = DateTime.Now;
+//            TimeSpan ts = new TimeSpan();
 
-
-
-//                EmailData_Renewals data = new EmailData_Renewals();
-//                data.user_full_name = "X";
-//                data.renewal_list = new List<Email_Data_Renewal_Customer>();
-
-
-
-//                DateTime dt = DateTime.Now;
-//                TimeSpan ts = new TimeSpan();
-
-//                foreach (var license in lsLicences)
-//                {
+//            foreach (var license in lsLicences)
+//            {
 //                //ts = dt - license.expirydate;
 //                //string expiresin = $"days: {ts.days}";
 //                //data.renewal_list.add(new email_data_renewal_customer { customer = "customer - (license.customername) " + license.sitename, expiresin = expiresin, open_link = "www.google.co.za", product = license.productname });
@@ -109,16 +110,16 @@
 
 
 
-//                var msg = MailHelper.CreateSingleTemplateEmailToMultipleRecipients(from, recipients, templateID, data);
+//            var msg = MailHelper.CreateSingleTemplateEmailToMultipleRecipients(from, recipients, templateID, data);
 
 
 
-//                var response = await client.SendEmailAsync(msg);
+//            var response = await client.SendEmailAsync(msg);
 
 
 
-//                //getAlluserEmails
-//                List<EmailAddress> tos = new List<EmailAddress>
+//            //getAlluserEmails
+//            List<EmailAddress> tos = new List<EmailAddress>
 //                {
 //                    new EmailAddress("erwin@devinpire.co.za", "Example User 2"),
 //                    new EmailAddress("test3@example.com", "Example User 3")
@@ -128,17 +129,17 @@
 
 
 
-//                if (response.StatusCode != System.Net.HttpStatusCode.OK && response.StatusCode != System.Net.HttpStatusCode.Accepted) // MEANS THAT 200 OK was recieved
-//                {
-//                    return false;
-//                }
-//                else
-//                {
-//                    return true;
-//                }
-
-
-
+//            if (response.StatusCode != System.Net.HttpStatusCode.OK && response.StatusCode != System.Net.HttpStatusCode.Accepted) // MEANS THAT 200 OK was recieved
+//            {
+//                return false;
 //            }
+//            else
+//            {
+//                return true;
+//            }
+
+
+
 //        }
 //    }
+//}
