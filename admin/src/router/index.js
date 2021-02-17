@@ -64,6 +64,9 @@ const routes = [
     name: 'index',
     component: Index
   },
+
+////////////////////////////////////
+
   {
     path: '/new-or-existing-customer',
     name: 'noe_customer',
@@ -79,6 +82,9 @@ const routes = [
     name: 'noe_product',
     component: noe_product
   },
+
+/////////////////////////////////////
+
   {
     path: '/customer-select',
     name: 'customer-select',

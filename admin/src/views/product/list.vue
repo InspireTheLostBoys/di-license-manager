@@ -22,16 +22,20 @@ export default {
          {
           text: "Product Name",
           value: "productName",
+          align: "start"
+
         },
         {
           text: "productSupplier",
           value: "productSupplier",
+          align: "center"
 
         }, 
          
         {
           text: "",
           value: "actions",
+          align: "end"
         },
       ],
     };
