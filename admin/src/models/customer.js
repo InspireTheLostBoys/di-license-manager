@@ -13,7 +13,7 @@ export class Customer extends ModelBase {
     dateTime = new Date();
 
     constructor(dataObj) {
-        super();
+        super();        //By calling the super() method in the constructor method, we call the parent's constructor method and get access to the parent's properties and methods:
         this.mapData(dataObj);
     }
 }
