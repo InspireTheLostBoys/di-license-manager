@@ -1553,3 +1553,10 @@ Error Number:547,State:0,Class:16
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
    at DILicenseManagerServer.Controllers.SiteController.CreateSite(SiteDTO requestDTO) in C:\work\di-license-manager\server\DILicenceManagerSerever\Controllers\SiteController.cs:line 101
 >>>>>>> 1c41dc8900f93592ec367fd8b599d887e321c664
+2021-02-17 13:15:08,891 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-17 13:15:08,940 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-17 13:15:08,979 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever
+2021-02-17 13:22:13,352 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-17 13:22:13,420 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-17 13:22:13,477 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever
+2021-02-17 16:00:49,405 [5] WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
