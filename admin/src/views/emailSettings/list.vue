@@ -14,8 +14,7 @@
         </v-data-table>
       </template>
     </ListWrapper>
-    <v-btn @click="crudManager.onAdd()">Add</v-btn>
-
+    <v-btn class="primary" @click="crudManager.onAdd()">Add</v-btn>
     <v-btn class="primary" @click="$router.push('/')">Back</v-btn>
   </v-container>
 </template>

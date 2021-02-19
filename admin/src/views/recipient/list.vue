@@ -1,6 +1,6 @@
 <template>
   <v-container>
-     <ListWrapper>
+    <ListWrapper>
       <template v-slot:search="params">
         <v-data-table
           :search="params.search"
@@ -14,12 +14,9 @@
         </v-data-table>
       </template>
     </ListWrapper>
-
-    <v-btn disabled @click="crudManager.onAdd()">Add</v-btn>
-  
+    <v-btn class="primary" @click="crudManager.onAdd()">Add</v-btn>
     <v-btn class="primary" @click="$router.push('/')">Back</v-btn>
-
-</v-container>
+  </v-container>
 </template>
 
 <script>
@@ -27,7 +24,7 @@ import { RecipientCrud } from "../../libs/recipient";
 import ListWrapper from "../../components/ListWrapper.vue";
 
 export default {
-  components:{
+  components: {
     ListWrapper,
   },
   data() {

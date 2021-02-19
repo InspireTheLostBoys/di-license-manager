@@ -1,6 +1,6 @@
 <template>
   <v-container>
-     <ListWrapper>
+    <ListWrapper>
       <template v-slot:search="params">
         <v-data-table
           :search="params.search"
@@ -14,9 +14,7 @@
         </v-data-table>
       </template>
     </ListWrapper>
-
-  <v-btn disabled @click="crudManager.onAdd()">Add</v-btn>
-  
+    <v-btn class="primary" @click="crudManager.onAdd()">Add</v-btn>
     <v-btn class="primary" @click="$router.push('/')">Back</v-btn>
   </v-container>
 </template>
@@ -25,9 +23,8 @@
 import { SiteCrud } from "../../libs/site";
 import ListWrapper from "../../components/ListWrapper.vue";
 
-
 export default {
-  components:{
+  components: {
     ListWrapper,
   },
   data() {
@@ -45,21 +42,21 @@ export default {
         {
           text: "",
           value: "actions",
-          align: "end"
+          align: "end",
         },
       ],
     };
   },
   created() {
-      console.log(this.crudManager)
+    console.log(this.crudManager);
   },
   methods: {
-      editItem(item) {
-          this.crudManager.onEdit(item);
-      },
-      deleteItem(item) {
-          this.crudManager.delete(item);
-      }
-  }
+    editItem(item) {
+      this.crudManager.onEdit(item);
+    },
+    deleteItem(item) {
+      this.crudManager.delete(item);
+    },
+  },
 };
 </script>
