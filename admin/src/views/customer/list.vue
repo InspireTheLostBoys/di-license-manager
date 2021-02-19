@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <ListWrapper>
+    <ListWrapper header="Customer">
       <template v-slot:search="params">
         <v-data-table
           :search="params.search"

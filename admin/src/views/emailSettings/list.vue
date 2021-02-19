@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <ListWrapper>
+    <ListWrapper header="Email Settings">
       <template v-slot:search="params">
         <v-data-table
           :search="params.search"
