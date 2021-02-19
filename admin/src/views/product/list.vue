@@ -1,21 +1,34 @@
 <template>
   <v-container>
-    <h2>Products:</h2>
-    <v-btn disabled @click="crudManager.onAdd()">Add</v-btn>
-    <v-data-table :headers="headers" :items="crudManager.list">
-      <template v-slot:item.actions="{ item }">
-        <v-btn disabled text @click="editItem(item)">edit</v-btn>
-        <v-btn dissabled text @click="deleteItem(item)">delete</v-btn>
+  <ListWrapper>
+      <template v-slot:search="params">
+        <v-data-table
+          :search="params.search"
+          :headers="headers"
+          :items="crudManager.list"
+        >
+          <template v-slot:item.actions="{ item }">
+            <v-btn disabled text @click="editItem(item)">edit</v-btn>
+            <v-btn disabled text @click="deleteItem(item)">delete</v-btn>
+          </template>
+        </v-data-table>
       </template>
-    </v-data-table>
+    </ListWrapper>
+
+    <v-btn disabled @click="crudManager.onAdd()">Add</v-btn>
+  
     <v-btn class="primary" @click="$router.push('/')">Back</v-btn>
   </v-container>
 </template>
 
 <script>
 import { ProductCrud } from "../../libs/product";
+import ListWrapper from "../../components/ListWrapper.vue";
 
 export default {
+  components:{
+    ListWrapper,
+  },
   data() {
     return {
       crudManager: new ProductCrud(this),
