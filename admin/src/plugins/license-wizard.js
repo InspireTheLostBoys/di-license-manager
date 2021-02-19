@@ -11,5 +11,7 @@ Vue.use({
         VUE.prototype.setLicenseWizardCtx = function(ctx) {
             LicenseWizard.setCtx(ctx);
         }
+
+        Vue.prototype.$tableHeaders = [ "Admin Users", "Customers", "Email Settings", "Licenses" ];
     }
 });

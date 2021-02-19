@@ -21,11 +21,12 @@ export default {
     list: [
       { title: "Admin Users", path: "/adminUser" },
       { title: "Customers", path: "/customer" },
-      { title: "Licenses", path: "/license" },
-      { title: "Recipients", path: "/recipient" },
-      { title: "Products", path: "/product" },
-      { title: "Sites", path: "/site" },
       { title: "Email Setings", path: "/email" },
+      { title: "Licenses", path: "/license" },
+      { title: "Products", path: "/product" },
+      { title: "Recipients", path: "/recipient" },
+      { title: "Sites", path: "/site" },
+      
     ],
   }),
   methods: {
