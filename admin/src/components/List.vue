@@ -24,6 +24,8 @@ export default {
   },
 
   methods: {
+
+    
     // comfirmDelete(item){
     //   this.$refs.deleteModal.show(val => {
     //     if (val){

@@ -1,16 +1,21 @@
 <template>
   <v-container>
-    <ListWrapper header="Customer" >
-      <template v-slot:search="params">      
-      <List :search="params.search" :headers="headers" :crudManager="crudManager">
-      </List>
+    <ListWrapper header="Customer">
+      <template v-slot:search="params">
+        <List
+          :search="params.search"
+          :headers="headers"
+          :crudManager="crudManager"
+        >
+        </List>
       </template>
     </ListWrapper>
 
-    <v-btn disabled @click="crudManager.onAdd()" class="mr-3">Add</v-btn>
+    <v-btn @click="crudManager.onAdd()" class="mr-3">Add</v-btn>
     <v-btn class="primary" @click="$router.push('/')">Back</v-btn>
   </v-container>
 </template>
+
 
 <script>
 import { CustomerCrud } from "../../libs/customer";
