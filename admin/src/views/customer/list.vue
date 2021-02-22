@@ -10,12 +10,10 @@
         </List>
       </template>
     </ListWrapper>
-
-    <v-btn @click="crudManager.onAdd()" class="mr-3">Add</v-btn>
+    <v-btn text @click="crudManager.onAdd()" class="mr-3">Add</v-btn>
     <v-btn class="primary" @click="$router.push('/')">Back</v-btn>
   </v-container>
 </template>
-
 
 <script>
 import { CustomerCrud } from "../../libs/customer";
@@ -66,20 +64,6 @@ export default {
         },
       ],
     };
-  },
-  created() {
-    console.log(this.crudManager);
-  },
-  methods: {
-    clicked() {
-      alert("clicked from parent in child");
-    },
-        editItem(item) {
-            this.crudManager.onEdit(item);
-        },
-        deleteItem(item) {
-            this.crudManager.delete(item);
-        }
   },
 };
 </script>

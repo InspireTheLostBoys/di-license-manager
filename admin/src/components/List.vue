@@ -1,19 +1,17 @@
 <template>
   <v-container>
     <v-data-table :search="search" :items="crudManager.list" :headers="headers">
-    <template v-slot:item.actions="{ item }">
-      <v-btn @click="comfirmDelete(item)">Delete</v-btn>
-    </template>
-    
+      <template v-slot:item.actions="{ item }">
+        <v-btn text @click="comfirmDelete(item)">Delete</v-btn>
+      </template>
     </v-data-table>
     <deleteModal ref="deleteModal" :delete="crudManager.delete"></deleteModal>
   </v-container>
 </template>
 
 <script>
-import deleteModal from './deleteModal.vue';
+import deleteModal from "./deleteModal.vue";
 export default {
-
   components: {
     deleteModal,
   },
@@ -24,8 +22,6 @@ export default {
   },
 
   methods: {
-
-    
     // comfirmDelete(item){
     //   this.$refs.deleteModal.show(val => {
     //     if (val){
@@ -33,12 +29,9 @@ export default {
     //     }
     //   })
     // }
-
-    comfirmDelete(item){
-      this.$refs.deleteModal.show(
-        this.crudManager, item
-      )
-    }
-  }
-}
+    comfirmDelete(item) {
+      this.$refs.deleteModal.show(this.crudManager, item);
+    },
+  },
+};
 </script>

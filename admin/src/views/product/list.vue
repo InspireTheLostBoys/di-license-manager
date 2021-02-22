@@ -1,20 +1,16 @@
 <template>
   <v-container>
-    <ListWrapper>
+    <ListWrapper header="Products">
       <template v-slot:search="params">
-        <v-data-table
+        <List
           :search="params.search"
           :headers="headers"
-          :items="crudManager.list"
+          :crudManager="crudManager"
         >
-          <template v-slot:item.actions="{ item }">
-            <v-btn  text @click="editItem(item)">edit</v-btn>
-            <v-btn  text @click="deleteItem(item)">delete</v-btn>
-          </template>
-        </v-data-table>
+        </List>
       </template>
     </ListWrapper>
-    <v-btn class="primary" @click="crudManager.onAdd()">Add</v-btn>
+    <v-btn text @click="crudManager.onAdd()" class="mr-3">Add</v-btn>
     <v-btn class="primary" @click="$router.push('/')">Back</v-btn>
   </v-container>
 </template>
@@ -22,10 +18,12 @@
 <script>
 import { ProductCrud } from "../../libs/product";
 import ListWrapper from "../../components/ListWrapper.vue";
+import List from "../../components/List.vue";
 
 export default {
   components: {
     ListWrapper,
+    List
   },
   data() {
     return {

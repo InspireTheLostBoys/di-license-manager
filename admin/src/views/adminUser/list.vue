@@ -1,23 +1,16 @@
 <template>
   <v-container>
-    <ListWrapper header="Admin User">
+    <ListWrapper header="Admin Users">
       <template v-slot:search="params">
-     
-        <v-data-table
+        <List
           :search="params.search"
           :headers="headers"
-          :items="crudManager.list"
+          :crudManager="crudManager"
         >
-          <template v-slot:item.actions="{ item }">
-            <v-btn text @click="editItem(item)">edit</v-btn>
-            <v-btn text @click="deleteItem(item)">delete</v-btn>
-          </template>
-        </v-data-table>
+        </List>
       </template>
     </ListWrapper>
-
-    <v-btn @click="crudManager.onAdd()">Add</v-btn>
-
+    <v-btn text @click="crudManager.onAdd()" class="mr-3">Add</v-btn>
     <v-btn class="primary" @click="$router.push('/')">Back</v-btn>
   </v-container>
 </template>
@@ -25,11 +18,13 @@
 <script>
 import { AdminUserCrud } from "../../libs/adminUser";
 import ListWrapper from "../../components/ListWrapper.vue";
+import List from "../../components/List.vue";
 
 export default {
   name: "adminUsers-list",
   components: {
     ListWrapper,
+    List,
   },
   data() {
     return {

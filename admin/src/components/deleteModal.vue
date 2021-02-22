@@ -3,7 +3,7 @@
     <v-dialog persistent max-width="500" v-model="dialog">
       <v-card>
         <v-card-text class="headline"
-          >Are you sure you want to delete this customer?</v-card-text
+          >Are you sure you want to delete this record?</v-card-text
         >
         <v-card-actions>
           <v-spacer></v-spacer>
