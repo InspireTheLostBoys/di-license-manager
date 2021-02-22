@@ -8,11 +8,11 @@
 
 <script>
 export default {
-    props: {
-        header: String
-    },
+  props: {
+    header: String,
+  },
   data: () => ({
     search: "",
-  })
+  }),
 };
 </script>

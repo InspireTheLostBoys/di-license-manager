@@ -22,9 +22,12 @@
 <script>
 import { CustomerCrud } from "../../libs/customer";
 import ListWrapper from "../../components/ListWrapper.vue";
+import List from "../../components/List.vue";
+
 export default {
   components: {
     ListWrapper,
+    List,
   },
   data() {
     return {

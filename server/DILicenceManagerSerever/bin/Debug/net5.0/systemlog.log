@@ -1560,3 +1560,7 @@ Error Number:547,State:0,Class:16
 2021-02-17 13:22:13,420 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
 2021-02-17 13:22:13,477 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Work\GIT\di-license-manager\server\DILicenceManagerSerever
 2021-02-17 16:00:49,405 [5] WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+2021-02-19 13:14:24,974 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-19 13:14:25,015 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-19 13:14:25,034 [1] INFO Microsoft.Hosting.Lifetime - Content root path: C:\Work\di-license-manager\server\DILicenceManagerSerever
+2021-02-19 13:24:28,913 [9] WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
