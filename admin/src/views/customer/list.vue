@@ -8,8 +8,8 @@
           :items="crudManager.list"
         >
           <template v-slot:item.actions="{ item }">
-            <v-btn disabled text @click="editItem(item)">edit</v-btn>
-            <v-btn disabled text @click="deleteItem(item)">delete</v-btn>
+            <v-btn  text @click="editItem(item)">edit</v-btn>
+            <v-btn  text @click="deleteItem(item)">delete</v-btn>
           </template>
         </v-data-table>
       </template>
@@ -73,12 +73,12 @@ export default {
     clicked() {
       alert("clicked from parent in child");
     },
-    //     editItem(item) {
-    //         this.crudManager.onEdit(item);
-    //     },
-    //     deleteItem(item) {
-    //         this.crudManager.delete(item);
-    //     }
+        editItem(item) {
+            this.crudManager.onEdit(item);
+        },
+        deleteItem(item) {
+            this.crudManager.delete(item);
+        }
   },
 };
 </script>
