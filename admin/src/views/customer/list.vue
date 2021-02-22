@@ -67,5 +67,19 @@ export default {
       ],
     };
   },
+  created() {
+    console.log(this.crudManager);
+  },
+  methods: {
+    clicked() {
+      alert("clicked from parent in child");
+    },
+        editItem(item) {
+            this.crudManager.onEdit(item);
+        },
+        deleteItem(item) {
+            this.crudManager.delete(item);
+        }
+  },
 };
 </script>
