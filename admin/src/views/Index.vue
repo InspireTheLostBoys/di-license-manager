@@ -17,6 +17,7 @@
 
 <script>
 export default {
+
   data: () => ({
     list: [
       { title: "Admin Users", path: "/adminUser" },
@@ -29,6 +30,7 @@ export default {
       
     ],
   }),
+  
   methods: {
     goTo() {
       let self = this;
