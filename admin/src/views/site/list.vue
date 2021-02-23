@@ -47,14 +47,6 @@ export default {
   },
   created() {
     console.log(this.crudManager);
-  },
-  methods: {
-    editItem(item) {
-      this.crudManager.onEdit(item);
-    },
-    deleteItem(item) {
-      this.crudManager.delete(item);
-    },
-  },
+  }
 };
 </script>

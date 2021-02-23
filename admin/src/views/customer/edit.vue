@@ -1,68 +1,47 @@
 <template>
   <v-container>
-    <ListWrapper header="Customer">
-      <template v-slot:search="params">
-        <List
-          :search="params.search"
-          :headers="headers"
-          :crudManager="crudManager"
-        >
-        </List>
-      </template>
-    </ListWrapper>
-    <v-btn text @click="crudManager.onAdd()" class="mr-3">Add</v-btn>
-    <v-btn class="primary" @click="$router.push('/')">Back</v-btn>
+    <v-form @submit.prevent="crudManager.update">
+      <v-text-field
+        label="customer Name"
+        v-model="crudManager.formObj.customerName"
+      ></v-text-field>
+      <v-text-field
+        label="email Address"
+        v-model="crudManager.formObj.emailAddress"
+      ></v-text-field>
+      <v-text-field
+        label="address Line 1"
+        v-model="crudManager.formObj.addressLine1"
+      ></v-text-field>
+      <v-text-field
+        label="address Line 2"
+        v-model="crudManager.formObj.addressLine2"
+      ></v-text-field>
+      <v-text-field
+        label="city"
+        v-model="crudManager.formObj.city"
+      ></v-text-field>
+      <v-text-field
+        label="province Or State"
+        v-model="crudManager.formObj.provinceOrState"
+      ></v-text-field>
+      <v-text-field
+        label="postal Code"
+        v-model="crudManager.formObj.postalCode"
+      ></v-text-field>
+
+      <v-btn type="submit" color="success">Submit</v-btn>
+    </v-form>
   </v-container>
 </template>
 
 <script>
 import { CustomerCrud } from "../../libs/customer";
-import ListWrapper from "../../components/ListWrapper.vue";
-import List from "../../components/List.vue";
 
 export default {
-  components: {
-    ListWrapper,
-    List,
-  },
   data() {
     return {
       crudManager: new CustomerCrud(this),
-      headers: [
-        {
-          text: "Customer Name",
-          value: "customerName",
-        },
-        {
-          text: "Email Address",
-          value: "emailAddress",
-        },
-        {
-          text: "Address Line 1",
-          value: "addressLine1",
-        },
-        {
-          text: "Address Line 2",
-          value: "addressLine2",
-        },
-        {
-          text: "City",
-          value: "city",
-        },
-        {
-          text: "Province Or State",
-          value: "provinceOrState",
-        },
-        ,
-        {
-          text: "Postal Code",
-          value: "postalCode",
-        },
-        {
-          text: "",
-          value: "actions",
-        },
-      ],
     };
   },
 };

@@ -18,9 +18,9 @@
 
 <script>
 export default {
-  props: {
-    crudManager: Object,
-  },
+//   props: {
+//     crudManager: Object,
+//   },
   data() {
     return {
       dialog: false,
